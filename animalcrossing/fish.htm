@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+function Get(yourUrl){
+    var Httpreq = new XMLHttpRequest(); // a new request
+    Httpreq.open("GET",yourUrl,false);
+    Httpreq.send(null);
+    return Httpreq.responseText;          
+}
+
+var json_obj = JSON.parse(Get("fish.json"));
+console.log(json_obj);
+</script>
+</head>
+<body>
+Hello world!
+</body>
+</html>
