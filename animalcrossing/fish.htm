@@ -1,7 +1,6 @@
 <html>
 <head>
 <script>
-function runMe() {
 function Get(yourUrl){
     var Httpreq = new XMLHttpRequest(); // a new request
     Httpreq.open("GET",yourUrl,false);
@@ -20,7 +19,9 @@ function stringFromObject(obj) {
 }
 
 function process() {
+	let params = new URLSearchParams(location.search.slice(1));
 	var json_obj = JSON.parse(Get("fish.json"));
+	json_obj.sort((x, y) => params.get('order') == 'asc' ? x.Value - y.Value : y.Value - x.Value);
 	var resultHTML = "";
 	resultHTML += "<table><tbody>";
 	for(var i = 0; i < json_obj.length; i++) {
@@ -31,13 +32,9 @@ function process() {
 	resultHTML += "</tbody></table>";
 	document.getElementById('results').innerHTML = resultHTML;
 }
-
-process();
-}
 </script>
 </head>
-<body onload="runMe()">
-Hello world!
+<body onload="process()">
 <div id="results" />
 </body>
 </html>
