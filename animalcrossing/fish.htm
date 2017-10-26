@@ -22,13 +22,13 @@ function stringFromObject(obj) {
 function process() {
 	var json_obj = JSON.parse(Get("fish.json"));
 	var resultsElement = document.getElementById('results');
-	resultsElement.innerHTML += "<table>";
+	resultsElement.innerHTML += "<table><tbody>";
 	for(var i = 0; i < json_obj.length; i++) {
 		resultsElement.innerHTML += "<tr>" 
 			+ stringFromObject(json_obj[i])
 			+"</tr>";
 	}
-	resultsElement.innerHTML += "</table>";
+	resultsElement.innerHTML += "</tbody></table>";
 }
 
 process();
