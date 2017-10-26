@@ -8,11 +8,19 @@ function Get(yourUrl){
     return Httpreq.responseText;          
 }
 
-var json_obj = JSON.parse(Get("fish.json"));
-console.log(json_obj);
+function process() {
+	var json_obj = JSON.parse(Get("fish.json"));
+	var resultsElement = document.getElementById('results');
+	for(var i = 0; i < json_obj.length; i++) {
+		resultsElement.innerHTML += "<br>" + json_obj[i];
+	}
+}
+
+process();
 </script>
 </head>
 <body>
 Hello world!
+<div id="results" />
 </body>
 </html>
