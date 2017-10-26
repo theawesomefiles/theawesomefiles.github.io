@@ -1,6 +1,7 @@
 <html>
 <head>
 <script>
+function runMe() {
 function Get(yourUrl){
     var Httpreq = new XMLHttpRequest(); // a new request
     Httpreq.open("GET",yourUrl,false);
@@ -17,9 +18,10 @@ function process() {
 }
 
 process();
+}
 </script>
 </head>
-<body>
+<body onload="runMe()">
 Hello world!
 <div id="results" />
 </body>
