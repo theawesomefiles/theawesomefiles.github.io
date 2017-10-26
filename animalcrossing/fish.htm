@@ -24,9 +24,13 @@ function process() {
 	var resultsElement = document.getElementById('results');
 	resultsElement.innerHTML += "<table><tbody>";
 	for(var i = 0; i < json_obj.length; i++) {
-		resultsElement.innerHTML += "<tr>" 
-			+ stringFromObject(json_obj[i])
-			+"</tr>";
+		resultsElement.innerHTML += "<tr>";
+		for(var property in obj) {
+			if(obj.hasOwnProperty(property)) {
+				resultsElement.innerHTML += "<td>" + obj[property] + "</td>";
+			}
+		}
+		resultsElement.innerHTML += "</tr>";
 	}
 	resultsElement.innerHTML += "</tbody></table>";
 	console.log(resultsElement.innerHTML);
