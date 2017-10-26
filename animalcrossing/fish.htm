@@ -9,12 +9,26 @@ function Get(yourUrl){
     return Httpreq.responseText;          
 }
 
+function stringFromObject(obj) {
+	var ret = "";
+	for(var property in obj) {
+		if(obj.hasOwnProperty(property)) {
+			ret += "<td>" + obj[property] + "</td>";
+		}
+	}
+	return ret;
+}
+
 function process() {
 	var json_obj = JSON.parse(Get("fish.json"));
 	var resultsElement = document.getElementById('results');
+	resultsElement.innerHTML += "<table>";
 	for(var i = 0; i < json_obj.length; i++) {
-		resultsElement.innerHTML += "<br>" + json_obj[i];
+		resultsElement.innerHTML += "<tr>" 
+			+ stringFromObject(json_obj[i])
+			+"</tr>";
 	}
+	resultsElement.innerHTML += "</table>";
 }
 
 process();
