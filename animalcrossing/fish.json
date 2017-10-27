@@ -4,503 +4,556 @@
    "Value": 900,
    "Shadow": "Shortest",
    "Location": "River",
-   "Time": "November-February, All Day"
+   "Date,Time": "November-February, All Day",
+   "date":["11/1-2/29"]
  },
  {
    "Name": "Pale Chub",
    "Value": 200,
    "Shadow": "Shortest",
    "Location": "River",
-   "Time": "All Year, 9AM-4PM"
+   "Date,Time": "All Year, 9AM-4PM"
  },
  {
    "Name": "Crucian Carp",
    "Value": 120,
    "Shadow": "Short",
    "Location": "River",
-   "Time": "All Year, All Day"
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Dace",
    "Value": 200,
    "Shadow": "Medium",
    "Location": "River",
-   "Time": "All Year, 4PM-9AM"
+   "Date,Time": "All Year, 4PM-9AM"
  },
  {
    "Name": "Barbel Steed",
    "Value": 200,
    "Shadow": "Medium",
    "Location": "River",
-   "Time": "All Year, All Day"
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Carp",
    "Value": 300,
    "Shadow": "Long",
    "Location": "River",
-   "Time": "All Year, All Day"
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Koi",
    "Value": 4000,
    "Shadow": "Long",
    "Location": "River",
-   "Time": "All Year, 4PM-9AM"
+   "Date,Time": "All Year, 4PM-9AM"
  },
  {
    "Name": "Goldfish",
    "Value": 1300,
    "Shadow": "Shortest",
    "Location": "River",
-   "Time": "All Year, All Day"
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Pop-eyed Goldfish",
    "Value": 1300,
    "Shadow": "Shortest",
    "Location": "River",
-   "Time": "All Year, 9AM-4PM"
+   "Date,Time": "All Year, 9AM-4PM"
  },
  {
    "Name": "Killifish",
    "Value": 300,
    "Shadow": "Shortest",
    "Location": "Small Pond",
-   "Time": "April-August, All Day"
+   "Date,Time": "April-August, All Day",
+   "date": ["4/1-8/31"]
  },
  {
    "Name": "Crawfish",
    "Value": 200,
    "Shadow": "Short",
    "Location": "Small Pond",
-   "Time": "April-mid-September, All Day"
+   "Date,Time": "April-mid-September, All Day",
+   "date": ["4/1-9/15"]
  },
  {
    "Name": "Soft-shelled Turtle",
    "Value": 3750,
    "Shadow": "Medium",
    "Location": "River",
-   "Time": "August-September, 4PM-9AM"
+   "Date,Time": "August-September, 4PM-9AM",
+   "date": ["8/1-9/30"]
  },
  {
    "Name": "Tadpole",
    "Value": 100,
    "Shadow": "Shortest",
    "Location": "Small Pond",
-   "Time": "March-July, All Day"
+   "Date,Time": "March-July, All Day",
+   "date":["3/1-7/31"]
  },
  {
    "Name": "Frog",
    "Value": 120,
    "Shadow": "Short",
    "Location": "Small Pond",
-   "Time": "May-August, All Day"
+   "Date,Time": "May-August, All Day",
+   "date":["5/1-8/31"]
  },
  {
    "Name": "Freshwater Goby",
    "Value": 300,
    "Shadow": "Short",
    "Location": "River",
-   "Time": "All Year, 4PM-9AM"
+   "Date,Time": "All Year, 4PM-9AM"
  },
  {
    "Name": "Loach",
    "Value": 300,
    "Shadow": "Short",
    "Location": "River",
-   "Time": "March-May, All Day"
+   "Date,Time": "March-May, All Day",
+   "date":["3/1-5/31"]
  },
  {
    "Name": "Catfish",
    "Value": 800,
    "Shadow": "Long",
    "Location": "Lake",
-   "Time": "May-October, 4PM-9AM"
+   "Date,Time": "May-October, 4PM-9AM",
+   "date":["5/1-10/31"]
  },
  {
    "Name": "Eel",
    "Value": 2000,
    "Shadow": "Long and Thin",
    "Location": "River",
-   "Time": "June-mid-September, 4PM-9AM"
+   "Date,Time": "June-mid-September, 4PM-9AM",
+   "date":["6/1-9/15"]
  },
  {
    "Name": "Giant Snakehead",
    "Value": 5500,
    "Shadow": "Very Long",
    "Location": "Lake",
-   "Time": "June-August, 9AM-4PM"
+   "Date,Time": "June-August, 9AM-4PM",
+   "date":["6/1-8/31"]
  },
  {
    "Name": "Bluegill",
    "Value": 120,
    "Shadow": "Short",
    "Location": "River",
-   "Time": "All Year, 9AM-4PM"
+   "Date,Time": "All Year, 9AM-4PM"
  },
  {
    "Name": "Yellow Perch",
    "Value": 240,
    "Shadow": "Medium",
    "Location": "River",
-   "Time": "October-March, All Day"
+   "Date,Time": "October-March, All Day",
+   "date":["10/1-3/31"]
  },
  {
    "Name": "Black Bass",
    "Value": 300,
    "Shadow": "Long",
    "Location": "River",
-   "Time": "All Year, All Day"
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Pike",
    "Value": 1800,
    "Shadow": "Very Long",
    "Location": "River",
-   "Time": "September-December, 4AM-9PM"
+   "Date,Time": "September-December, 4AM-9PM",
+   "date":["9/1-12/31"]
  },
  {
    "Name": "Pond Smelt",
    "Value": 300,
    "Shadow": "Short",
    "Location": "River",
-   "Time": "December-February, All Day"
+   "Date,Time": "December-February, All Day",
+   "date":["12/1-2/29"]
  },
  {
    "Name": "Sweetfish",
    "Value": 900,
    "Shadow": "Medium",
    "Location": "River",
-   "Time": "July-mid-September, All Day"
+   "Date,Time": "July-mid-September, All Day",
+   "date":["7/1-9/15"]
  },
  {
    "Name": "Cherry Salmon",
    "Value": 1000,
    "Shadow": "Medium",
    "Location": "River",
-   "Time": "March-June, 4AM-9AM and 4PM-9PM September-November, 4AM-9PM"
+   "Date,Time": "March-June, 4AM-9AM and 4PM-9PM September-November, 4AM-9PM",
+   "date":["3/1-6/30","9/1-11/30"]
  },
  {
    "Name": "Char",
    "Value": 3800,
    "Shadow": "Medium",
    "Location": "Waterfall",
-   "Time": "March-June, 4AM-9AM and 4PM-9PM September-November, 4AM-9PM"
+   "Date,Time": "March-June, 4AM-9AM and 4PM-9PM September-November, 4AM-9PM",
+   "date":["3/1-6/30","9/1-11/30"]
  },
  {
    "Name": "Rainbow Trout",
    "Value": 800,
    "Shadow": "Long",
    "Location": "River",
-   "Time": "March-June, 4AM-9AM and 4PM-9PM September-November, 4AM-9PM"
+   "Date,Time": "March-June, 4AM-9AM and 4PM-9PM September-November, 4AM-9PM",
+   "date":["3/1-6/30","9/1-11/30"]
  },
  {
    "Name": "Stringfish",
    "Value": 15000,
    "Shadow": "Longest",
    "Location": "River",
-   "Time": "December-February, 4PM-9AM"
+   "Date,Time": "December-February, 4PM-9AM",
+   "date":["12/1-2/29"]
  },
  {
    "Name": "Salmon",
    "Value": 700,
    "Shadow": "Long",
    "Location": "River Mouth",
-   "Time": "September, All Day"
+   "Date,Time": "September, All Day",
+   "date":["9/1-9/30"]
  },
  {
    "Name": "King Salmon",
    "Value": 1800,
    "Shadow": "Longest",
    "Location": "River Mouth",
-   "Time": "September, All Day"
+   "Date,Time": "September, All Day",
+   "date":["9/1-9/30"]
  },
  {
    "Name": "Mitten Crab / Shanghai Crab",
    "Value": 2000,
    "Shadow": "Short",
    "Location": "River",
-   "Time": "September 15-November, 4PM-9AM"
+   "Date,Time": "September 15-November, 4PM-9AM",
+   "date":["9/15-11/30"]
  },
  {
    "Name": "Guppy",
    "Value": 1300,
    "Shadow": "Shortest",
    "Location": "River",
-   "Time": "April-November, 9AM-4PM"
+   "Date,Time": "April-November, 9AM-4PM",
+   "date":["4/1-11/30"]
  },
  {
    "Name": "Nibble Fish",
    "Value": 1500,
    "Shadow": "Short",
    "Location": "River",
-   "Time": "May-September, 9AM-4PM"
+   "Date,Time": "May-September, 9AM-4PM",
+   "date":["5/1-9/30"]
  },
  {
    "Name": "Angelfish",
    "Value": 3000,
    "Shadow": "Short",
    "Location": "River",
-   "Time": "May-October, 4PM-9AM"
+   "Date,Time": "May-October, 4PM-9AM",
+   "date":["5/1-10/31"]
  },
  {
    "Name": "Neon Tetra",
    "Value": 500,
    "Shadow": "Shortest",
    "Location": "River",
-   "Time": "April-November, 9AM-4PM"
+   "Date,Time": "April-November, 9AM-4PM",
+   "date":["4/1-11/30"]
  },
  {
    "Name": "Piranha",
    "Value": 2500,
    "Shadow": "Short",
    "Location": "River",
-   "Time": "June-mid-September, 9AM-4PM and 9PM-4AM"
+   "Date,Time": "June-mid-September, 9AM-4PM and 9PM-4AM",
+   "date":["6/1-9/15"]
  },
  {
    "Name": "Arowana",
    "Value": 10000,
    "Shadow": "Long",
    "Location": "River",
-   "Time": "June-mid-September, 4PM-9AM"
+   "Date,Time": "June-mid-September, 4PM-9AM",
+   "date":["6/1-9/15"]
  },
  {
    "Name": "Dorado",
    "Value": 15000,
    "Shadow": "Very Long",
    "Location": "River",
-   "Time": "June-September, 4AM-9PM"
+   "Date,Time": "June-September, 4AM-9PM",
+   "date":["6/1-9/30"]
  },
  {
    "Name": "Gar",
    "Value": 6000,
    "Shadow": "Longest",
    "Location": "Lake",
-   "Time": "June-September, 4PM-9AM"
+   "Date,Time": "June-September, 4PM-9AM",
+   "date":["6/1-9/30"]
  },
  {
    "Name": "Arapaima",
    "Value": 10000,
    "Shadow": "Longest",
    "Location": "River",
-   "Time": "July-September, 4PM-9AM"
+   "Date,Time": "July-September, 4PM-9AM",
+   "date":["7/1-9/30"]
  },
  {
    "Name": "Saddled Bichir",
    "Value": 4000,
    "Shadow": "Long",
    "Location": "River",
-   "Time": "June-September, 9PM-4AM"
+   "Date,Time": "June-September, 9PM-4AM",
+   "date":["6/1-9/30"]
  },
  {
    "Name": "Sea Butterfly",
    "Value": 1000,
    "Shadow": "Shortest",
    "Location": "Ocean",
-   "Time": "December-February, All Day"
+   "Date,Time": "December-February, All Day",
+   "date":["12/1-2/29"]
  },
  {
    "Name": "Sea Horse",
    "Value": 1100,
    "Shadow": "Shortest",
-   "Location": "Ocean",
-   "Time": "April-November, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "April-November, All Day",
+   "date":["4/1-11/30"]
  },
  {
    "Name": "Clown Fish",
    "Value": 650,
    "Shadow": "Shortest",
-   "Location": "Ocean",
-   "Time": "April-September, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "April-September, All Day",
+   "date":["4/1-9/30"]
  },
  {
    "Name": "Surgeonfish",
    "Value": 1000,
    "Shadow": "Short",
-   "Location": "Ocean",
-   "Time": "April-September, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "April-September, All Day",
+   "date":["4/1-9/30"]
  },
  {
    "Name": "Butterfly Fish",
    "Value": 1000,
    "Shadow": "Short",
    "Location": "Ocean",
-   "Time": "April-September, All Day"
+   "Date,Time": "April-September, All Day",
+   "date":["4/1-9/30"]
  },
  {
    "Name": "Napoleonfish",
    "Value": 10000,
    "Shadow": "Longest",
-   "Location": "Ocean",
-   "Time": "July-August, 4AM-9PM All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "July-August, 4AM-9PM",
+   "date":["7/1-8/31"]
  },
  {
    "Name": "Zebra Turkeyfish",
    "Value": 400,
    "Shadow": "Medium",
-   "Location": "Ocean",
-   "Time": "April-November, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "April-November, All Day",
+   "date":["4/1-11/30"]
  },
  {
    "Name": "Blow Fish",
    "Value": 125,
    "Shadow": "Medium",
    "Location": "Ocean",
-   "Time": "November-February, 9PM-4AM"
+   "Date,Time": "November-February, 9PM-4AM",
+   "date":["11/1-2/29"]
  },
  {
    "Name": "Puffer Fish",
    "Value": 240,
    "Shadow": "Medium",
-   "Location": "Ocean",
-   "Time": "July-September, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "July-September, All Day",
+   "date":["7/1-9/30"]
  },
  {
    "Name": "Horse Mackerel",
    "Value": 150,
    "Shadow": "Short",
-   "Location": "Ocean",
-   "Time": "All Year, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Barred Knifejaw",
    "Value": 5000,
    "Shadow": "Medium",
-   "Location": "Ocean",
-   "Time": "March-November, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "March-November, All Day",
+   "date":["3/1-11/30"]
  },
  {
    "Name": "Sea Bass",
    "Value": 200,
    "Shadow": "Very Long",
-   "Location": "Ocean",
-   "Time": "All Year, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Red Snapper",
    "Value": 3000,
    "Shadow": "Medium",
-   "Location": "Ocean",
-   "Time": "All Year, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Dab",
    "Value": 300,
    "Shadow": "Medium",
    "Location": "Ocean",
-   "Time": "October-April, All Day"
+   "Date,Time": "October-April, All Day",
+   "date":["10/1-4/30"]
  },
  {
    "Name": "Olive Flounder",
    "Value": 800,
    "Shadow": "Long",
-   "Location": "Ocean",
-   "Time": "All Year, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Squid",
    "Value": 400,
    "Shadow": "Medium",
-   "Location": "Ocean",
-   "Time": "December-mid-August,All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "December-mid-August,All Day",
+   "date":["12/1-8/15"]
  },
  {
    "Name": "Moray Eel",
    "Value": 2000,
    "Shadow": "Very Long",
-   "Location": "Ocean",
-   "Time": "August-October, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "August-October, All Day",
+   "date":["8/1-10/31"]
  },
  {
    "Name": "Ribbon Eel",
    "Value": 600,
    "Shadow": "Long and Thin",
-   "Location": "Tropical Island",
-   "Time": "All Year, All Day All Year, All Day on Tropical Island"
+   "Location": "Island",
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Football Fish",
    "Value": 2500,
    "Shadow": "Long",
    "Location": "Ocean",
-   "Time": "November-March, 4PM-9AM"
+   "Date,Time": "November-March, 4PM-9AM",
+   "date":["11/1-3/31"]
  },
  {
    "Name": "Tuna",
    "Value": 7000,
    "Shadow": "Longest",
    "Location": "Ocean",
-   "Time": "November-March, All Day"
+   "Date,Time": "November-March, All Day",
+   "date":["11/1-3/31"]
  },
  {
    "Name": "Blue Marlin",
    "Value": 10000,
    "Shadow": "Longest",
-   "Location": "Ocean",
-   "Time": "July-September, All Day All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "July-September, All Day",
+   "date":["7/1-9/31"]
  },
  {
    "Name": "Giant Trevally",
    "Value": 4500,
    "Shadow": "Very Long",
-   "Location": "Tropical Island",
-   "Time": "All Year, All Day"
+   "Location": "Island",
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Ray",
    "Value": 3000,
    "Shadow": "Very Long",
-   "Location": "Ocean",
-   "Time": "August-November, 4AM-9PM All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "August-November, 4AM-9PM",
+   "date":["8/1-11/30"]
  },
  {
    "Name": "Ocean Sunfish",
    "Value": 4000,
    "Shadow": "Longest, Fin",
-   "Location": "Ocean",
-   "Time": "June-September, 4AM-9PM All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "June-September, 4AM-9PM",
+   "date":["6/1-9/30"]
  },
  {
    "Name": "Hammerhead Shark",
    "Value": 8000,
    "Shadow": "Longest, Fin",
-   "Location": "Ocean",
-   "Time": "June-September, 4PM-9AM All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "June-September, 4PM-9AM",
+   "date":["6/1-9/30"]
  },
  {
    "Name": "Shark",
    "Value": 15000,
    "Shadow": "Longest, Fin",
-   "Location": "Ocean",
-   "Time": "June-September, 4PM-9AM All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "June-September, 4PM-9AM",
+   "date":["6/1-9/30"]
  },
  {
    "Name": "Saw Shark",
    "Value": 12000,
    "Shadow": "Longest, Fin",
-   "Location": "Ocean",
-   "Time": "June-September, 4PM-9AM All Year, All Day on Tropical Island"
+   "Location": "Ocean,Island",
+   "Date,Time": "June-September, 4PM-9AM",
+   "date":["6/1-9/30"]
  },
  {
    "Name": "Whale Shark",
    "Value": 13000,
    "Shadow": "Longest, Fin",
-   "Location": "Tropical Island",
-   "Time": "All Year, All Day"
+   "Location": "Island",
+   "Date,Time": "All Year, All Day"
  },
  {
    "Name": "Oarfish",
    "Value": 9000,
    "Shadow": "Longest",
    "Location": "Ocean",
-   "Time": "December-May, All Day"
+   "Date,Time": "December-May, All Day",
+   "date":["12/1-5/31"]
  },
  {
    "Name": "Coelacanth",
    "Value": 15000,
    "Shadow": "Longest",
    "Location": "Ocean during rain or snow",
-   "Time": "All Year, 4PM-9AM"
+   "Date,Time": "All Year, 4PM-9AM"
  }
 ]

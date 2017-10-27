@@ -11,23 +11,94 @@ function Get(yourUrl){
 function stringFromObject(obj) {
 	var ret = "";
 	for(var property in obj) {
-		if(obj.hasOwnProperty(property)) {
+		if(obj.hasOwnProperty(property) && property[0] === property[0].toUpperCase()) {
 			ret += "<td>" + obj[property] + "</td>";
 		}
 	}
 	return ret;
 }
 
+function filterItem(obj,params,month,day) {
+
+	var passedDateValidation = true;
+	if(obj.date != null) {
+		for(var i = 0; i < obj.date.length; i++) {
+			var dates = obj.date[i].split('-');
+			var buffer = dates[0].split('/');
+			var firstMonth = parseInt(buffer[0]);
+			var firstDay = parseInt(buffer[1]);
+			buffer = dates[1].split('/');
+			var lastMonth = parseInt(buffer[0]);
+			var lastDay = parseInt(buffer[1]);
+			if(lastMonth < firstMonth) {
+				lastMonth += 12;
+				month += 12;
+			}
+			if(month == firstMonth) {
+				if(day < firstDay) {
+					passedDateValidation = false;
+				}
+			} else if (month == lastMonth) {
+				if(day > lastDay) {
+					passedDateValidation = false;
+				}
+			} else if(month < firstMonth || month > lastMonth) {
+				passedDateValidation = false;
+			}
+		}
+	}
+
+	var showIsland = params.get('island');
+	if(showIsland == 'only') {
+		if(!obj.Location.includes('Island')) {
+			return false;
+		}
+	} else if (showIsland == 'false') {
+		if(obj.Location.includes('Island') && !passedDateValidation) {
+			return false;
+		}
+	}
+	return obj.Location.includes('Island') || passedDateValidation;
+}
+
+function compareItems(x, y, sortField, sortOrder) {
+	var first = sortOrder == 'asc' ? x[sortField] : y[sortField];
+	var second = sortOrder == 'asc' ? y[sortField] : x[sortField];
+	return first < second ? -1 : (first > second ? 1 : 0);
+}
+
+function sortItems(obj,params) {
+	var sortField = params.get('sf');
+	var sortOrder = params.get('so');
+	if(sortField == null) {
+		sortField = 'Value';
+	}
+	if(sortOrder == null) {
+		if(sortField == 'Value') {
+			sortOrder = 'desc';
+		} else {
+			sortOrder = 'asc';
+		}
+	}
+	obj.sort((x, y) => compareItems(x, y, sortField, sortOrder));
+	return obj;
+}
+
 function process() {
 	let params = new URLSearchParams(location.search.slice(1));
 	var json_obj = JSON.parse(Get("fish.json"));
-	json_obj.sort((x, y) => params.get('order') == 'asc' ? x.Value - y.Value : y.Value - x.Value);
+	json_obj = sortItems(json_obj,params);
 	var resultHTML = "";
 	resultHTML += "<table><tbody>";
+	resultHTML += "<tr><td>Name</td><td>Value</td><td>Shadow</td><td>Location</td><td>Date,Time</td>";
+	var month = new Date().getMonth() + 1;
+	var day = new Date().getDate();
 	for(var i = 0; i < json_obj.length; i++) {
-		resultHTML += "<tr>" 
-			+ stringFromObject(json_obj[i])
-			+"</tr>";
+		if(filterItem(json_obj[i],params,month,day)) {
+			resultHTML += "<tr>" 
+				+ stringFromObject(json_obj[i])
+				+"</tr>";
+		}
 	}
 	resultHTML += "</tbody></table>";
 	document.getElementById('results').innerHTML = resultHTML;
