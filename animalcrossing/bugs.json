@@ -1,0 +1,540 @@
+[
+ {
+   "Name": "Common Butterfly",
+   "Value": 90,
+   "Rarity": 7,
+   "Location": "Above Flowers",
+   "Time": "March-June, 4AM-7PM September, 8AM-4PM"
+ },
+ {
+   "Name": "Yellow Butterfly",
+   "Value": 90,
+   "Rarity": 6,
+   "Location": "Above Flowers",
+   "Time": "March-June, 4AM-7PM September, 8AM-4PM"
+ },
+ {
+   "Name": "Tiger Butterfly",
+   "Value": 160,
+   "Rarity": 5,
+   "Location": "Above red or pink Flowers",
+   "Time": "March-June, 4AM-7PM July-August, 8AM-5PM September, 8AM-4PM",
+   "IslandTime": "All Year, 8AM-5PM"
+ },
+ {
+   "Name": "Peacock Butterfly",
+   "Value": 220,
+   "Rarity": 4,
+   "Location": "Above blue, purple or black Flowers",
+   "Time": "March-June, 4AM-7PM July, 4AM-5PM August, 8AM-5PM September, 8AM-4PM",
+   "IslandTime": "All Year, 8AM-5PM "
+ },
+ {
+   "Name": "Monarch Butterfly",
+   "Value": 140,
+   "Rarity": 6,
+   "Location": "Above Flowers",
+   "Time": "September-October, 4AM-5PM November, 8AM-5PM",
+   "IslandTime": "All Year, 8AM-5PM "
+ },
+ {
+   "Name": "Emperor Butterfly",
+   "Value": 2500,
+   "Rarity": 3,
+   "Location": "Above Flowers",
+   "Time": "June-September, 7PM-8AM ",
+   "IslandTime": "All Year, 7PM-8AM "
+ },
+ {
+   "Name": "Agrias Butterfly",
+   "Value": 3000,
+   "Rarity": 3,
+   "Location": "Above Flowers",
+   "Time": "June-September, 8AM-5PM",
+   "IslandTime": "All Year, 8AM-5PM "
+ },
+ {
+   "Name": "Raja Brooke Butterfly",
+   "Value": 2500,
+   "Rarity": 3,
+   "Location": "River or Pond",
+   "Time": "May-September, 8AM-5PM"
+ },
+ {
+   "Name": "Birdwing Butterfly",
+   "Value": 4000,
+   "Rarity": 2,
+   "Location": "Above Flowers",
+   "Time": "June-September, 8AM-4PM ",
+   "IslandTime": "All Year, 8AM-4PM "
+ },
+ {
+   "Name": "Moth",
+   "Value": 60,
+   "Rarity": 7,
+   "Location": "Outdoor Lights",
+   "Time": "May-September, 7PM-4AM"
+ },
+ {
+   "Name": "Oak Silk Moth",
+   "Value": 1200,
+   "Rarity": 2,
+   "Location": "Tree Trunk",
+   "Time": "June-September, 7PM-4AM",
+   "IslandTime": "All Year, 7PM-4AM"
+ },
+ {
+   "Name": "Honeybee",
+   "Value": 100,
+   "Rarity": 6,
+   "Location": "Above Flowers",
+   "Time": "March-June, 8AM-5PM July, 8AM-4PM"
+ },
+ {
+   "Name": "Bee",
+   "Value": 2500,
+   "Rarity": 3,
+   "Location": "Shake Trees",
+   "Time": "All Year, All Day",
+   "IslandTime": "All Year, All Day"
+ },
+ {
+   "Name": "Long Locust",
+   "Value": 200,
+   "Rarity": 7,
+   "Location": "Ground",
+   "Time": "May-November, 8AM-7PM",
+   "IslandTime": "All Year, 8AM-7PM"
+ },
+ {
+   "Name": "Migratory Locust",
+   "Value": 600,
+   "Rarity": 5,
+   "Location": "Ground",
+   "Time": "August-November, 8AM-7PM",
+   "IslandTime": "All Year, 8AM-7PM"
+ },
+ {
+   "Name": "Rice Grasshopper",
+   "Value": 400,
+   "Rarity": 2,
+   "Location": "Ground",
+   "Time": "August-November, 8AM-7PM"
+ },
+ {
+   "Name": "Mantis",
+   "Value": 430,
+   "Rarity": 4,
+   "Location": "On Flowers",
+   "Time": "April-November, 8AM-5PM",
+   "IslandTime": "All Year, 8AM-5PM "
+ },
+ {
+   "Name": "Orchid Mantis",
+   "Value": 2400,
+   "Rarity": 3,
+   "Location": "White Flowers",
+   "Time": "April-November, 8AM-5PM",
+   "IslandTime": "All Year, 8AM-5PM"
+ },
+ {
+   "Name": "Brown Cicada",
+   "Value": 200,
+   "Rarity": 7,
+   "Location": "Tree Trunk",
+   "Time": "July-August, 8AM-5PM"
+ },
+ {
+   "Name": "Robust Cicada",
+   "Value": 300,
+   "Rarity": 7,
+   "Location": "Tree Trunk",
+   "Time": "July-August, 8AM-5PM"
+ },
+ {
+   "Name": "Giant Cicada",
+   "Value": 500,
+   "Rarity": 7,
+   "Location": "Tree Trunk",
+   "Time": "July-August, 8AM-5PM"
+ },
+ {
+   "Name": "Walker Cicada",
+   "Value": 400,
+   "Rarity": 7,
+   "Location": "Tree Trunk",
+   "Time": "July-September, 8AM-5PM"
+ },
+ {
+   "Name": "Evening Cicada",
+   "Value": 550,
+   "Rarity": 7,
+   "Location": "Tree Trunk",
+   "Time": "July-August, 4AM-8AM or 4PM-7PM"
+ },
+ {
+   "Name": "Cicada Shell",
+   "Value": 100,
+   "Rarity": 7,
+   "Location": "Tree Trunk",
+   "Time": "July-August, All Day"
+ },
+ {
+   "Name": "Lantern Fly",
+   "Value": 1800,
+   "Rarity": 3,
+   "Location": "Tree Trunk",
+   "Time": "June or September, 4PM-7PM or 11PM-8AM July-August, 4PM-8AM",
+   "IslandTime": "All Year, 4PM-8AM "
+ },
+ {
+   "Name": "Red Dragonfly",
+   "Value": 80,
+   "Rarity": 6,
+   "Location": "Flying",
+   "Time": "September-October, 8AM-7PM"
+ },
+ {
+   "Name": "Darner Dragonfly",
+   "Value": 200,
+   "Rarity": 5,
+   "Location": "Flying",
+   "Time": "June-August, 8AM-5PM"
+ },
+ {
+   "Name": "Banded Dragonfly",
+   "Value": 4500,
+   "Rarity": 4,
+   "Location": "Flying",
+   "Time": "July-August, 8AM-5PM"
+ },
+ {
+   "Name": "Giant Petaltail",
+   "Value": 8000,
+   "Rarity": 2,
+   "Location": "Flying",
+   "Time": "August-October, 5PM-7PM"
+ },
+ {
+   "Name": "Ant",
+   "Value": 80,
+   "Rarity": 7,
+   "Location": "Candy, Spoiled Turnips, Rotten Fruit",
+   "Time": "All Year, All Day",
+   "IslandTime": "All Year, All Day"
+ },
+ {
+   "Name": "Pondskater",
+   "Value": 130,
+   "Rarity": 6,
+   "Location": "River, Pond",
+   "Time": "May-September, 8AM-7PM"
+ },
+ {
+   "Name": "Diving Beetle",
+   "Value": 800,
+   "Rarity": 5,
+   "Location": "River, Ponds",
+   "Time": "May-September, 8AM-5PM"
+ },
+ {
+   "Name": "Stinkbug",
+   "Value": 120,
+   "Rarity": 7,
+   "Location": "Tree Trunks",
+   "Time": "April-October, All Day"
+ },
+ {
+   "Name": "Snail",
+   "Value": 250,
+   "Rarity": 6,
+   "Location": "On Bushes while raining",
+   "Time": "April-September, All Day"
+ },
+ {
+   "Name": "Cricket",
+   "Value": 130,
+   "Rarity": 7,
+   "Location": "Ground",
+   "Time": "September-November, 5PM-8AM"
+ },
+ {
+   "Name": "Bell Cricket",
+   "Value": 430,
+   "Rarity": 6,
+   "Location": "Ground",
+   "Time": "September-October, 5PM-8AM"
+ },
+ {
+   "Name": "Grasshopper",
+   "Value": 160,
+   "Rarity": 6,
+   "Location": "Ground",
+   "Time": "July, 4PM-5PM August-September, 8AM-5PM ",
+   "IslandTime": "All Year, 8AM-5PM "
+ },
+ {
+   "Name": "Mole Cricket",
+   "Value": 280,
+   "Rarity": 4,
+   "Location": "Underground (Listen for Sound and Dig)",
+   "Time": "November-May, All Day"
+ },
+ {
+   "Name": "Walking Leaf",
+   "Value": 600,
+   "Rarity": 5,
+   "Location": "Ground",
+   "Time": "July-September, 8AM-5PM"
+ },
+ {
+   "Name": "Walking Stick",
+   "Value": 600,
+   "Rarity": 4,
+   "Location": "Tree Trunk",
+   "Time": "July-August, 4AM-8AM or 5PM-7PM September-November, 4AM-7PM",
+   "IslandTime": "All Year, 4AM-8AM or 5PM-7PM"
+ },
+ {
+   "Name": "Bagworm",
+   "Value": 300,
+   "Rarity": 6,
+   "Location": "Shake or Hit Trees with Net",
+   "Time": "October-February, All Day"
+ },
+ {
+   "Name": "Ladybug",
+   "Value": 200,
+   "Rarity": 6,
+   "Location": "On Flowers",
+   "Time": "March-June or October, 8AM-5PM"
+ },
+ {
+   "Name": "Violin Beetle",
+   "Value": 260,
+   "Rarity": 4,
+   "Location": "Tree Stumps",
+   "Time": "June,4AM-7PM September-October, 4AM-5PM November, 8AM-5PM"
+ },
+ {
+   "Name": "Longhorn Beetle",
+   "Value": 260,
+   "Rarity": 4,
+   "Location": "Tree Stumps",
+   "Time": "July-August, 11PM-7PM",
+   "IslandTime": "All Year, 11PM-7PM"
+ },
+ {
+   "Name": "Tiger Beetle",
+   "Value": 1500,
+   "Rarity": 3,
+   "Location": "Ground",
+   "Time": "March-September, 8AM-7PM October, 4AM-5PM",
+   "IslandTime": "All Year, 4PM-11PM"
+ },
+ {
+   "Name": "Dung Beetle",
+   "Value": 800,
+   "Rarity": 3,
+   "Location": "Snowballs",
+   "Time": "December-February, 5PM-8AM"
+ },
+ {
+   "Name": "Wharf Roach",
+   "Value": 200,
+   "Rarity": 7,
+   "Location": "Beach",
+   "Time": "All Year, All Day",
+   "IslandTime": "All Year, All Day"
+ },
+ {
+   "Name": "Hermit Crab",
+   "Value": 1000,
+   "Rarity": 5,
+   "Location": "Island Beach",
+   "IslandTime": "All Year, 7PM-8AM"
+ },
+ {
+   "Name": "Firefly",
+   "Value": 300,
+   "Rarity": 5,
+   "Location": "Fresh Water",
+   "Time": "June, 7PM-4AM"
+ },
+ {
+   "Name": "Fruit Beetle",
+   "Value": 100,
+   "Rarity": 6,
+   "Location": "Tree Trunk",
+   "Time": "July-August, All Day September, 7PM-8AM ",
+   "IslandTime": "All Year, All Day "
+ },
+ {
+   "Name": "Scarab Beetle",
+   "Value": 6000,
+   "Rarity": 2,
+   "Location": "Tree Trunk",
+   "Time": "July-August, 11PM-8AM",
+   "IslandTime": "All Year, 11PM-8AM"
+ },
+ {
+   "Name": "Jewel Beetle",
+   "Value": 2400,
+   "Rarity": 4,
+   "Location": "Tree Trunk",
+   "Time": "July-August, 8AM-5PM",
+   "IslandTime": "All Year, 8AM-5PM"
+ },
+ {
+   "Name": "Miyama Stag",
+   "Value": 1000,
+   "Rarity": 4,
+   "Location": "Tree Trunk",
+   "Time": "July-September, All Day",
+   "IslandTime": "All Year, All Day"
+ },
+ {
+   "Name": "Saw Stag",
+   "Value": 2000,
+   "Rarity": 3,
+   "Location": "Tree Trunk",
+   "Time": "July-August, All Day",
+   "IslandTime": "All Year, All Day"
+ },
+ {
+   "Name": "Giant Stag",
+   "Value": 10000,
+   "Rarity": 3,
+   "Location": "Tree Trunk",
+   "Time": "July-August, 11PM-8AM",
+   "IslandTime": "All Year, 11PM-8AM "
+ },
+ {
+   "Name": "Rainbow Stag",
+   "Value": 10000,
+   "Rarity": 2,
+   "Location": "Tree Trunk",
+   "Time": "June or September, 7PM-8AM July-August, 5PM-8AM",
+   "IslandTime": "All Year, 5PM-8AM"
+ },
+ {
+   "Name": "Cyclommatus Stag",
+   "Value": 8000,
+   "Rarity": 2,
+   "Location": "Palm Trunks",
+   "Time": "July-August, 5PM-8AM ",
+   "IslandTime": "All Year, 5PM-8AM "
+ },
+ {
+   "Name": "Golden Stag",
+   "Value": 12000,
+   "Rarity": 1,
+   "Location": "Palm Trunks",
+   "Time": "July-August, 5PM-8AM ",
+   "IslandTime": "All Year, 5PM-8AM "
+ },
+ {
+   "Name": "Horned Dynastid",
+   "Value": 1350,
+   "Rarity": 4,
+   "Location": "Tree Trunk",
+   "Time": "July-August, 5PM-8AM",
+   "IslandTime": "All Year, 5PM-8AM "
+ },
+ {
+   "Name": "Horned Atlas",
+   "Value": 8000,
+   "Rarity": 2,
+   "Location": "Palm Trunks",
+   "Time": "June-August, 5PM-8AM",
+   "IslandTime": "All Year, 5PM-8AM "
+ },
+ {
+   "Name": "Horned Elephant",
+   "Value": 8000,
+   "Rarity": 3,
+   "Location": "Palm Trunks",
+   "Time": "July-August, 5PM-8AM",
+   "IslandTime": "All Year, 5PM-8AM "
+ },
+ {
+   "Name": "Horned Hercules",
+   "Value": 12000,
+   "Rarity": 1,
+   "Location": "Palm Trunks",
+   "Time": "July-August, 5PM-8AM",
+   "IslandTime": "All Year, 5PM-8AM "
+ },
+ {
+   "Name": "Goliath Beetle",
+   "Value": 6000,
+   "Rarity": 2,
+   "Location": "Palm Trunks",
+   "Time": "June or September, 7PM-8AM July-August, 5PM-8AM ",
+   "IslandTime": "All Year, 5PM-8AM "
+ },
+ {
+   "Name": "Flea",
+   "Value": 70,
+   "Rarity": 7,
+   "Location": "On Villager",
+   "Time": "March-November, All Day"
+ },
+ {
+   "Name": "Pillbug",
+   "Value": 250,
+   "Rarity": 7,
+   "Location": "Under Rock",
+   "Time": "September-June, All Day July-August, 7PM-4AM"
+ },
+ {
+   "Name": "Mosquito",
+   "Value": 130,
+   "Rarity": 7,
+   "Location": "Flying",
+   "Time": "June-September, 5PM-4AM"
+ },
+ {
+   "Name": "Fly",
+   "Value": 60,
+   "Rarity": 7,
+   "Location": "Garbage or Spoiled Turnips",
+   "Time": "All Year, All Day",
+   "IslandTime": "All Year, All Day"
+ },
+ {
+   "Name": "House Centipede",
+   "Value": 250,
+   "Rarity": 6,
+   "Location": "Strike Rockswith Shovel",
+   "Time": "August-October, 7PM-8AM"
+ },
+ {
+   "Name": "Centipede",
+   "Value": 300,
+   "Rarity": 4,
+   "Location": "Strike Rockswith Shovel",
+   "Time": "June-February, 4PM-11PM"
+ },
+ {
+   "Name": "Spider",
+   "Value": 300,
+   "Rarity": 5,
+   "Location": "Shake or Hit Trees with Net",
+   "Time": "March-June or September, All Day July-August, 7PM-8AM October, 11PM-4PM"
+ },
+ {
+   "Name": "Tarantula",
+   "Value": 8000,
+   "Rarity": 3,
+   "Location": "Ground",
+   "Time": "June-August, 7PM-4AM"
+ },
+ {
+   "Name": "Scorpion",
+   "Value": 8000,
+   "Rarity": 3,
+   "Location": "Ground",
+   "Time": "July-September, 7PM-4AM"
+ }
+]
