@@ -1,0 +1,111 @@
+<html>
+<head>
+<script>
+function Get(yourUrl){
+    var Httpreq = new XMLHttpRequest(); // a new request
+    Httpreq.open("GET",yourUrl,false);
+    Httpreq.send(null);
+    return Httpreq.responseText;          
+}
+
+function stringFromObject(obj) {
+	var ret = "";
+	for(var property in obj) {
+		if(obj.hasOwnProperty(property) && property[0] === property[0].toUpperCase()) {
+			ret += "<td valign='top'>" + obj[property] + "</td>";
+		}
+	}
+	return ret;
+}
+
+function filterItem(obj,params,month,day) {
+
+	var passedDateValidation = true;
+	if(obj.date != null) {
+		for(var i = 0; i < obj.date.length; i++) {
+			var dates = obj.date[i].split('-');
+			var buffer = dates[0].split('/');
+			var firstMonth = parseInt(buffer[0]);
+			var firstDay = parseInt(buffer[1]);
+			buffer = dates[1].split('/');
+			var lastMonth = parseInt(buffer[0]);
+			var lastDay = parseInt(buffer[1]);
+			if(lastMonth < firstMonth) {
+				lastMonth += 12;
+				month += 12;
+			}
+			if(month == firstMonth) {
+				if(day < firstDay) {
+					passedDateValidation = false;
+				}
+			} else if (month == lastMonth) {
+				if(day > lastDay) {
+					passedDateValidation = false;
+				}
+			} else if(month < firstMonth || month > lastMonth) {
+				passedDateValidation = false;
+			}
+		}
+	}
+
+	var showIsland = params.get('island');
+	if(showIsland == 'only') {
+		if(obj.IslandTime == null) {
+			return false;
+		}
+	} else if (showIsland == 'false') {
+		if(obj.IslandTime != null && !passedDateValidation) {
+			return false;
+		}
+	}
+	return obj.IslandTime != null || passedDateValidation;
+}
+
+function compareItems(x, y, sortField, sortOrder) {
+	var first = sortOrder == 'asc' ? x[sortField] : y[sortField];
+	var second = sortOrder == 'asc' ? y[sortField] : x[sortField];
+	return first < second ? -1 : (first > second ? 1 : 0);
+}
+
+function sortItems(obj,params) {
+	var sortField = params.get('sf');
+	var sortOrder = params.get('so');
+	if(sortField == null) {
+		sortField = 'Value';
+	}
+	if(sortOrder == null) {
+		if(sortField == 'Value') {
+			sortOrder = 'desc';
+		} else {
+			sortOrder = 'asc';
+		}
+	}
+	obj.sort((x, y) => compareItems(x, y, sortField, sortOrder));
+	return obj;
+}
+
+function process() {
+	let params = new URLSearchParams(location.search.slice(1));
+	var json_obj = JSON.parse(Get("bugs.json"));
+	json_obj = sortItems(json_obj,params);
+	var resultHTML = "";
+	resultHTML += "<table><tbody>";
+	resultHTML += "<tr><td>Name</td><td>Value</td><td>Rarity</td><td>Location</td><td>Date,Time</td><td>Island Time</td>";
+	var month = new Date().getMonth() + 1;
+	var day = new Date().getDate();
+	for(var i = 0; i < json_obj.length; i++) {
+		if(filterItem(json_obj[i],params,month,day)) {
+			resultHTML += "<tr>" 
+				+ stringFromObject(json_obj[i])
+				+"</tr>";
+		}
+	}
+	resultHTML += "</tbody></table>";
+	document.getElementById('results').innerHTML = resultHTML;
+}
+</script>
+</head>
+<body onload="process()">
+<div id="results" />
+</body>
+</html>
