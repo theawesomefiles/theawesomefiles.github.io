@@ -30,6 +30,7 @@
    "Rarity": 4,
    "Location": "Above blue, purple or black Flowers",
    "Time": "March-June, 4AM-7PM<br/>July, 4AM-5PM<br/>August, 8AM-5PM<br/>September, 8AM-4PM",
+   "datetime": [{"3-6": ["4-19"]},{"7-7": ["4-17"]},{"8-8": ["8-17"]},{"9-9": ["8-16"]}],
    "IslandTime": "8AM-5PM"
  },
  {
@@ -38,6 +39,7 @@
    "Rarity": 6,
    "Location": "Above Flowers",
    "Time": "September-October, 4AM-5PM<br/>November, 8AM-5PM",
+   "datetime": [{"9-10": ["4-17"]},{"11-11": ["8-17"]}],
    "IslandTime": "8AM-5PM"
  },
  {
@@ -46,6 +48,7 @@
    "Rarity": 3,
    "Location": "Above Flowers",
    "Time": "June-September, 7PM-8AM",
+   "datetime": [{"6-9": ["19-8"]}],
    "IslandTime": "7PM-8AM"
  },
  {
@@ -54,6 +57,7 @@
    "Rarity": 3,
    "Location": "Above Flowers",
    "Time": "June-September, 8AM-5PM",
+   "datetime": [{"6-9": ["8-17"]}],
    "IslandTime": "8AM-5PM"
  },
  {
@@ -61,7 +65,8 @@
    "Value": 2500,
    "Rarity": 3,
    "Location": "River or Pond",
-   "Time": "May-September, 8AM-5PM"
+   "Time": "May-September, 8AM-5PM",
+   "datetime": [{"5-9": ["8-17"]}]
  },
  {
    "Name": "Birdwing Butterfly",
@@ -69,6 +74,7 @@
    "Rarity": 2,
    "Location": "Above Flowers",
    "Time": "June-September, 8AM-4PM",
+   "datetime": [{"6-9": ["8-16"]}],
    "IslandTime": "8AM-4PM"
  },
  {
@@ -76,7 +82,8 @@
    "Value": 60,
    "Rarity": 7,
    "Location": "Outdoor Lights",
-   "Time": "May-September, 7PM-4AM"
+   "Time": "May-September, 7PM-4AM",
+   "datetime": [{"5-9": ["19-4"]}]
  },
  {
    "Name": "Oak Silk Moth",
@@ -84,6 +91,7 @@
    "Rarity": 2,
    "Location": "Tree Trunk",
    "Time": "June-September, 7PM-4AM",
+   "datetime": [{"6-9": ["19-4"]}],
    "IslandTime": "7PM-4AM"
  },
  {
@@ -91,7 +99,8 @@
    "Value": 100,
    "Rarity": 6,
    "Location": "Above Flowers",
-   "Time": "March-June, 8AM-5PM<br/>July, 8AM-4PM"
+   "Time": "March-June, 8AM-5PM<br/>July, 8AM-4PM",
+   "datetime": [{"3-6": ["8-17"]},{"7-7": ["8-16"]}]
  },
  {
    "Name": "Bee",
@@ -99,6 +108,7 @@
    "Rarity": 3,
    "Location": "Shake Trees",
    "Time": "All Year, All Day",
+   "datetime": "*",
    "IslandTime": "All Day"
  },
  {
@@ -107,6 +117,7 @@
    "Rarity": 7,
    "Location": "Ground",
    "Time": "May-November, 8AM-7PM",
+   "datetime": [{"5-11": ["8-19"]}],
    "IslandTime": "8AM-7PM"
  },
  {
@@ -115,6 +126,7 @@
    "Rarity": 5,
    "Location": "Ground",
    "Time": "August-November, 8AM-7PM",
+   "datetime": [{"8-11": ["8-19"]}],
    "IslandTime": "8AM-7PM"
  },
  {
@@ -122,7 +134,8 @@
    "Value": 400,
    "Rarity": 2,
    "Location": "Ground",
-   "Time": "August-November, 8AM-7PM"
+   "Time": "August-November, 8AM-7PM",
+   "datetime": [{"8-11": ["8-19"]}]
  },
  {
    "Name": "Mantis",
@@ -130,6 +143,7 @@
    "Rarity": 4,
    "Location": "On Flowers",
    "Time": "April-November, 8AM-5PM",
+   "datetime": [{"4-11": ["8-17"]}],
    "IslandTime": "8AM-5PM"
  },
  {
@@ -138,6 +152,7 @@
    "Rarity": 3,
    "Location": "White Flowers",
    "Time": "April-November, 8AM-5PM",
+   "datetime": [{"4-11": ["8-17"]}],
    "IslandTime": "8AM-5PM"
  },
  {
@@ -145,42 +160,48 @@
    "Value": 200,
    "Rarity": 7,
    "Location": "Tree Trunk",
-   "Time": "July-August, 8AM-5PM"
+   "Time": "July-August, 8AM-5PM",
+   "datetime": [{"7-8": ["8-17"]}]
  },
  {
    "Name": "Robust Cicada",
    "Value": 300,
    "Rarity": 7,
    "Location": "Tree Trunk",
-   "Time": "July-August, 8AM-5PM"
+   "Time": "July-August, 8AM-5PM",
+   "datetime": [{"7-8": ["8-17"]}]
  },
  {
    "Name": "Giant Cicada",
    "Value": 500,
    "Rarity": 7,
    "Location": "Tree Trunk",
-   "Time": "July-August, 8AM-5PM"
+   "Time": "July-August, 8AM-5PM",
+   "datetime": [{"7-8": ["8-17"]}]
  },
  {
    "Name": "Walker Cicada",
    "Value": 400,
    "Rarity": 7,
    "Location": "Tree Trunk",
-   "Time": "July-September, 8AM-5PM"
+   "Time": "July-September, 8AM-5PM",
+   "datetime": [{"7-9": ["8-17"]}]
  },
  {
    "Name": "Evening Cicada",
    "Value": 550,
    "Rarity": 7,
    "Location": "Tree Trunk",
-   "Time": "July-August, 4AM-8AM or 4PM-7PM"
+   "Time": "July-August, 4AM-8AM or 4PM-7PM",
+   "datetime": [{"7-8": ["4-8","16-19"]}]
  },
  {
    "Name": "Cicada Shell",
    "Value": 100,
    "Rarity": 7,
    "Location": "Tree Trunk",
-   "Time": "July-August, All Day"
+   "Time": "July-August, All Day",
+   "datetime": [{"7-8": ["0-23"]}]
  },
  {
    "Name": "Lantern Fly",
@@ -188,6 +209,7 @@
    "Rarity": 3,
    "Location": "Tree Trunk",
    "Time": "June 4PM-7PM or 11PM-8AM<br/>July-August, 4PM-8AM<br/>September, 4PM-7PM or 11PM-8AM",
+   "datetime": [{"6-6": ["16-19","23-8"]},{"7-8":["16-8"]},{"9-9": ["16-19","23-8"]}],
    "IslandTime": "4PM-8AM"
  },
  {
@@ -195,28 +217,32 @@
    "Value": 80,
    "Rarity": 6,
    "Location": "Flying",
-   "Time": "September-October, 8AM-7PM"
+   "Time": "September-October, 8AM-7PM",
+   "datetime": [{"9-10": ["8-19"]}]
  },
  {
    "Name": "Darner Dragonfly",
    "Value": 200,
    "Rarity": 5,
    "Location": "Flying",
-   "Time": "June-August, 8AM-5PM"
+   "Time": "June-August, 8AM-5PM",
+   "datetime": [{"6-8": ["8-17"]}]
  },
  {
    "Name": "Banded Dragonfly",
    "Value": 4500,
    "Rarity": 4,
    "Location": "Flying",
-   "Time": "July-August, 8AM-5PM"
+   "Time": "July-August, 8AM-5PM",
+   "datetime": [{"7-8": ["8-17"]}]
  },
  {
    "Name": "Giant Petaltail",
    "Value": 8000,
    "Rarity": 2,
    "Location": "Flying",
-   "Time": "August-October, 5PM-7PM"
+   "Time": "August-October, 5PM-7PM",
+   "datetime": [{"8-10": ["17-19"]}]
  },
  {
    "Name": "Ant",
@@ -224,6 +250,7 @@
    "Rarity": 7,
    "Location": "Candy, Spoiled Turnips, Rotten Fruit",
    "Time": "All Year, All Day",
+   "datetime": "*",
    "IslandTime": "All Day"
  },
  {
@@ -231,42 +258,48 @@
    "Value": 130,
    "Rarity": 6,
    "Location": "River, Pond",
-   "Time": "May-September, 8AM-7PM"
+   "Time": "May-September, 8AM-7PM",
+   "datetime": [{"5-9": ["8-19"]}]
  },
  {
    "Name": "Diving Beetle",
    "Value": 800,
    "Rarity": 5,
    "Location": "River, Ponds",
-   "Time": "May-September, 8AM-5PM"
+   "Time": "May-September, 8AM-5PM",
+   "datetime": [{"5-9": ["8-17"]}]
  },
  {
    "Name": "Stinkbug",
    "Value": 120,
    "Rarity": 7,
    "Location": "Tree Trunks",
-   "Time": "April-October, All Day"
+   "Time": "April-October, All Day",
+   "datetime": [{"4-10": ["0-23"]}]
  },
  {
    "Name": "Snail",
    "Value": 250,
    "Rarity": 6,
    "Location": "On Bushes while raining",
-   "Time": "April-September, All Day"
+   "Time": "April-September, All Day",
+   "datetime": [{"4-9": ["0-23"]}]
  },
  {
    "Name": "Cricket",
    "Value": 130,
    "Rarity": 7,
    "Location": "Ground",
-   "Time": "September-November, 5PM-8AM"
+   "Time": "September-November, 5PM-8AM",
+   "datetime": [{"9-11": ["17-8"]}]
  },
  {
    "Name": "Bell Cricket",
    "Value": 430,
    "Rarity": 6,
    "Location": "Ground",
-   "Time": "September-October, 5PM-8AM"
+   "Time": "September-October, 5PM-8AM",
+   "datetime": [{"9-10": ["17-8"]}]
  },
  {
    "Name": "Grasshopper",
