@@ -16,6 +16,9 @@ function stringFromObject(obj) {
 			ret += "<td valign='top'>" + obj[property] + "</td>";
 		}
 	}
+	if(obj.IslandTime == null) {
+		ret += "<td valign='top'></td>";
+	}
 	return ret;
 }
 
@@ -89,15 +92,17 @@ function process() {
 	let params = new URLSearchParams(location.search.slice(1));
 	var json_obj = JSON.parse(Get("bugs.json"));
 	json_obj = sortItems(json_obj,params);
+
 	var resultHTML = "";
 	resultHTML += "<table><tbody>";
 	resultHTML += "<tr><td>Name</td><td>Value</td><td>Rarity</td><td>Location</td><td>Date,Time</td><td>Island Time</td>";
 	var month = new Date().getMonth() + 1;
 	var day = new Date().getDate();
 	for(var i = 0; i < json_obj.length; i++) {
-		if(filterItem(json_obj[i],params,month,day)) {
+		var dataObj = json_obj[i];
+		if(filterItem(dataObj,params,month,day)) {
 			resultHTML += "<tr>" 
-				+ stringFromObject(json_obj[i])
+				+ stringFromObject(dataObj)
 				+"</tr>";
 		}
 	}

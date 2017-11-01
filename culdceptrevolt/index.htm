@@ -1,6 +1,10 @@
 <HTML>
 <HEAD>
 <script>
+function createNode(value, left = null, right = null) {
+	return {"value": value, "left": left, "right": right};
+}
+
 function process() {
 	var str = document.getElementById('search').value;
 	document.getElementById('results').innerHTML = "<h1>" + str + "</h1>";
