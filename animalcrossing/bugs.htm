@@ -95,7 +95,7 @@ function process() {
 
 	var resultHTML = "";
 	resultHTML += "<table><tbody>";
-	resultHTML += "<tr><td>Name</td><td>Value</td><td>Rarity</td><td>Location</td><td>Date,Time</td><td>Island Time</td>";
+	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Rarity</td><td class='header'>Location</td><td class='header'>Date,Time</td><td class='header'>Island Time</td>";
 	var month = new Date().getMonth() + 1;
 	var day = new Date().getDate();
 	for(var i = 0; i < json_obj.length; i++) {

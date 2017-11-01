@@ -91,7 +91,7 @@ function process() {
 	json_obj = sortItems(json_obj,params);
 	var resultHTML = "";
 	resultHTML += "<table><tbody>";
-	resultHTML += "<tr><td>Name</td><td>Value</td><td>Shadow</td><td>Location</td><td>Date,Time</td>";
+	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Shadow</td><td class='header'>Location</td><td class='header'>Date,Time</td>";
 	var month = new Date().getMonth() + 1;
 	var day = new Date().getDate();
 	for(var i = 0; i < json_obj.length; i++) {
