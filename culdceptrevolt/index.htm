@@ -1,4 +1,15 @@
 <HTML>
-	<HEAD></HEAD>
-	<BODY>Hello world</BODY>
+<HEAD>
+<script>
+function process() {
+	var str = document.getElementById('search').value;
+	document.getElementById('results').innerHTML = "<h1>" + str + "</h1>";
+}
+</script>
+</HEAD>
+	<BODY>Hello world
+		<p /><input type="text" id="search" />
+		<p /><input type="button" value="Go" onclick="process()" />
+		<p /><div id="results"/>
+	</BODY>
 </HTML>
