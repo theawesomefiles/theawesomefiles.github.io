@@ -53,10 +53,29 @@ function filterItem(obj,params,month,hour) {
 						currentMonth += 12;
 					}
 				}
-				var currentHour = hour;
 			
 				if(currentMonth < firstMonth || currentMonth > lastMonth) {
 					passedDateValidation = false;
+				}
+				else {
+					timeList = dateTimeEntry.value;
+					for(var i = 0; i < timeList.length; ++i) {
+						buffer = timeList[i].split('-');
+						var firstHour = parseInt(buffer[0]);
+						var lastHour = parseInt(buffer[1]);
+						var currentHour = hour;
+						
+						if(lastHour < firstHour) {
+							lastHour += 24;
+							if(currentHour < firstHour) {
+								currentHour += 24;
+							}
+						}
+
+						if(currentHour < firstHour || currentHour > lastHour) {
+							passedDateValidation = false;
+						}
+					}
 				}
 			}
 		}
