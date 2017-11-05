@@ -88,9 +88,10 @@ function sortItems(obj,params) {
 	return obj;
 }
 
+var json_obj;
+
 function process() {
 	let params = new URLSearchParams(location.search.slice(1));
-	var json_obj = JSON.parse(Get("bugs.json"));
 	json_obj = sortItems(json_obj,params);
 
 	var resultHTML = "";
@@ -109,9 +110,14 @@ function process() {
 	resultHTML += "</tbody></table>";
 	document.getElementById('results').innerHTML = resultHTML;
 }
+
+function load() {
+	json_obj = JSON.parse(Get("bugs.json"));
+	process();
+}
 </script>
 </head>
-<body onload="process()">
+<body onload="load()">
 <div id="results" />
 </body>
 </html>

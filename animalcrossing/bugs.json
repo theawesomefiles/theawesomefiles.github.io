@@ -307,6 +307,7 @@
    "Rarity": 6,
    "Location": "Ground",
    "Time": "July, 4PM-5PM<br/>August-September, 8AM-5PM",
+   "datetime": [{"7-7":["16-17"]},{"8-9":["8-17"]}],
    "IslandTime": "8AM-5PM"
  },
  {
@@ -314,7 +315,8 @@
    "Value": 280,
    "Rarity": 4,
    "Location": "Underground<br/>(Listen for Sound and Dig)",
-   "Time": "November-May, All Day"
+   "Time": "November-May, All Day",
+   "datetime": [{"11-5": 
  },
  {
    "Name": "Walking Leaf",
