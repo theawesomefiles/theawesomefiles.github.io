@@ -134,7 +134,7 @@ function load() {
 	var urlParams = new URLSearchParams(location.search.slice(1));
 	searchParams = {};
 	for(var searchKey of urlParams) {
-		searchParams[searchKey] = urlParams.get(searchKey);
+		searchParams[searchKey[0]] = searchKey[1];
 	}
 	process();
 }
