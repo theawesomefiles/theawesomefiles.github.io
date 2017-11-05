@@ -72,7 +72,7 @@ function filterItem(obj,params,month,hour) {
 							}
 						}
 
-						if(currentHour < firstHour || currentHour > lastHour) {
+						if(currentHour < firstHour || currentHour >= lastHour) {
 							passedDateValidation = false;
 						}
 					}
@@ -82,8 +82,8 @@ function filterItem(obj,params,month,hour) {
 	}
 	
 	var passedIslandTimeValidation = true;
-	if(obj.islandHours != null) {
-		for(var hourEntry of obj.islandHours) {
+	if(obj.islandhours != null) {
+		for(var hourEntry of obj.islandhours) {
 			var buffer = hourEntry.split('-');
 			var firstHour = parseInt(buffer[0]);
 			var lastHour = parseInt(buffer[1]);
@@ -96,7 +96,7 @@ function filterItem(obj,params,month,hour) {
 				}
 			}
 
-			if(currentHour < firstHour || currentHour > lastHour) {
+			if(currentHour < firstHour || currentHour >= lastHour) {
 				passedIslandTimeValidation = false;
 			}
 		}
