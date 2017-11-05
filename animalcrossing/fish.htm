@@ -38,6 +38,9 @@ function stringFromObject(obj) {
 }
 
 function filterItem(obj,params,month,day) {
+	if(params['show'] == 'all') {
+		return true;
+	}
 
 	var passedDateValidation = true;
 	if(obj.date != null) {
