@@ -22,31 +22,27 @@ function stringFromObject(obj) {
 	return ret;
 }
 
-function filterItem(obj,params,month,day) {
+function filterItem(obj,params,month,hour) {
 
 	var passedDateValidation = true;
-	if(obj.date != null) {
-		for(var i = 0; i < obj.date.length; i++) {
-			var dates = obj.date[i].split('-');
-			var buffer = dates[0].split('/');
+	if(obj.datetime != null && obj.datetime != '*') {
+		if(obj.datetime = '') {
+			passedDateValidation = false;
+		}
+		else for(var dateTimeEntry of obj.datetime.entries()) {
+			var buffer = dateTimeEntry[0].split('-');
 			var firstMonth = parseInt(buffer[0]);
-			var firstDay = parseInt(buffer[1]);
-			buffer = dates[1].split('/');
-			var lastMonth = parseInt(buffer[0]);
-			var lastDay = parseInt(buffer[1]);
+			var lastMonth = parseInt(buffer[1]);
+			var currentMonth = month;
 			if(lastMonth < firstMonth) {
 				lastMonth += 12;
-				month += 12;
+				if(currentMonth < firstMonth) {
+					currentMonth += 12;
+				}
 			}
-			if(month == firstMonth) {
-				if(day < firstDay) {
-					passedDateValidation = false;
-				}
-			} else if (month == lastMonth) {
-				if(day > lastDay) {
-					passedDateValidation = false;
-				}
-			} else if(month < firstMonth || month > lastMonth) {
+			var currentHour = hour;
+			
+			if(currentMonth < firstMonth || currentMonth > lastMonth) {
 				passedDateValidation = false;
 			}
 		}
@@ -98,10 +94,10 @@ function process() {
 	resultHTML += "<table><tbody>";
 	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Rarity</td><td class='header'>Location</td><td class='header'>Date,Time</td><td class='header'>Island Time</td>";
 	var month = new Date().getMonth() + 1;
-	var day = new Date().getDate();
+	var hour = new Date().getHours() + 1;
 	for(var i = 0; i < json_obj.length; i++) {
 		var dataObj = json_obj[i];
-		if(filterItem(dataObj,params,month,day)) {
+		if(filterItem(dataObj,params,month,hour)) {
 			resultHTML += "<tr>" 
 				+ stringFromObject(dataObj)
 				+"</tr>";

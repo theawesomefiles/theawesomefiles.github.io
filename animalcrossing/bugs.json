@@ -340,21 +340,24 @@
    "Value": 300,
    "Rarity": 6,
    "Location": "Shake or Hit Trees with Net",
-   "Time": "October-February, All Day"
+   "Time": "October-February, All Day",
+   "datetime": [{"10-2": ["0-24"]}]
  },
  {
    "Name": "Ladybug",
    "Value": 200,
    "Rarity": 6,
    "Location": "On Flowers",
-   "Time": "March-June 8AM-5PM<br/>October 8AM-5PM"
+   "Time": "March-June 8AM-5PM<br/>October 8AM-5PM",
+   "datetime": [{"3-6": ["8-17"]},{"10-10": ["8-17"]}]
  },
  {
    "Name": "Violin Beetle",
    "Value": 260,
    "Rarity": 4,
    "Location": "Tree Stumps",
-   "Time": "June, 4AM-7PM<br/>September-October, 4AM-5PM<br/>November, 8AM-5PM"
+   "Time": "June, 4AM-7PM<br/>September-October, 4AM-5PM<br/>November, 8AM-5PM",
+   "datetime": [{"6-6": ["4-19"]},{"9-10": ["4-17"]},{"11-11": ["8-17"]}]
  },
  {
    "Name": "Longhorn Beetle",
@@ -362,6 +365,7 @@
    "Rarity": 4,
    "Location": "Tree Stumps",
    "Time": "July-August, 11PM-7PM",
+   "datetime": [{"7-8": ["23-19"]}],
    "IslandTime": "11PM-7PM"
  },
  {
@@ -370,6 +374,7 @@
    "Rarity": 3,
    "Location": "Ground",
    "Time": "March-September, 8AM-7PM<br/>October, 4AM-5PM",
+   "datetime": [{"3-9": ["8-19"]},{"10-10": ["4-17"]}],
    "IslandTime": "4PM-11PM"
  },
  {
@@ -377,7 +382,8 @@
    "Value": 800,
    "Rarity": 3,
    "Location": "Snowballs",
-   "Time": "December-February, 5PM-8AM"
+   "Time": "December-February, 5PM-8AM",
+   "datetime": [{"12-2": ["17-8"]}]
  },
  {
    "Name": "Wharf Roach",
@@ -385,6 +391,7 @@
    "Rarity": 7,
    "Location": "Beach",
    "Time": "All Year, All Day",
+   "datetime": "*",
    "IslandTime": "All Day"
  },
  {
@@ -400,7 +407,8 @@
    "Value": 300,
    "Rarity": 5,
    "Location": "Fresh Water",
-   "Time": "June, 7PM-4AM"
+   "Time": "June, 7PM-4AM",
+   "datetime": [{"6-6": ["19-4"]}]
  },
  {
    "Name": "Fruit Beetle",
@@ -408,6 +416,7 @@
    "Rarity": 6,
    "Location": "Tree Trunk",
    "Time": "July-August, All Day<br/>September, 7PM-8AM",
+   "datetime": [{"7-8": ["0-24"]},{"9-9": ["19-8"]}],
    "IslandTime": "All Day "
  },
  {
@@ -416,6 +425,7 @@
    "Rarity": 2,
    "Location": "Tree Trunk",
    "Time": "July-August, 11PM-8AM",
+   "datetime": [{"7-8": ["23-8"]}],
    "IslandTime": "11PM-8AM"
  },
  {
@@ -424,6 +434,7 @@
    "Rarity": 4,
    "Location": "Tree Trunk",
    "Time": "July-August, 8AM-5PM",
+   "datetime": [{"7-8": ["8-17"]}],
    "IslandTime": "8AM-5PM"
  },
  {
@@ -432,6 +443,7 @@
    "Rarity": 4,
    "Location": "Tree Trunk",
    "Time": "July-September, All Day",
+   "datetime": [{"7-9": ["0-24"]}],
    "IslandTime": "All Day"
  },
  {
@@ -440,6 +452,7 @@
    "Rarity": 3,
    "Location": "Tree Trunk",
    "Time": "July-August, All Day",
+   "datetime": [{"7-8": ["0-24"]}],
    "IslandTime": "All Day"
  },
  {
@@ -448,6 +461,7 @@
    "Rarity": 3,
    "Location": "Tree Trunk",
    "Time": "July-August, 11PM-8AM",
+   "datetime": [{"7-8": ["23-8"]}],
    "IslandTime": "11PM-8AM"
  },
  {
@@ -456,6 +470,7 @@
    "Rarity": 2,
    "Location": "Tree Trunk",
    "Time": "June, 7PM-8AM<br/>July-August, 5PM-8AM<br/>September, 7PM-8AM",
+   "datetime": [{"6-6": ["19-8"]},{"7-8": ["17-8"]},{"9-9": ["19-8"]}],
    "IslandTime": "5PM-8AM"
  },
  {
@@ -464,6 +479,7 @@
    "Rarity": 2,
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
+   "datetime": [{"7-8": ["17-8"]}],
    "IslandTime": "5PM-8AM"
  },
  {
@@ -472,6 +488,7 @@
    "Rarity": 1,
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
+   "datetime": [{"7-8": ["17-8"]}],
    "IslandTime": "5PM-8AM"
  },
  {
@@ -480,6 +497,7 @@
    "Rarity": 4,
    "Location": "Tree Trunk",
    "Time": "July-August, 5PM-8AM",
+   "datetime": [{"7-8": ["17-8"]}],
    "IslandTime": "5PM-8AM"
  },
  {
@@ -488,6 +506,7 @@
    "Rarity": 2,
    "Location": "Palm Trunks",
    "Time": "June-August, 5PM-8AM",
+   "datetime": [{"6-8": ["17-8"]}],
    "IslandTime": "5PM-8AM"
  },
  {
@@ -496,6 +515,7 @@
    "Rarity": 3,
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
+   "datetime": [{"7-8": ["17-8"]}],
    "IslandTime": "5PM-8AM"
  },
  {
