@@ -51,7 +51,9 @@ function filterItem(obj,params,month,day) {
 			var lastDay = parseInt(buffer[1]);
 			if(lastMonth < firstMonth) {
 				lastMonth += 12;
-				month += 12;
+				if(month < firstMonth) {
+					month += 12;
+				}
 			}
 			if(month == firstMonth) {
 				if(day < firstDay) {
