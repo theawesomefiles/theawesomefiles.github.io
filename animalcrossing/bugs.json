@@ -22,7 +22,8 @@
    "Location": "Above red or pink Flowers",
    "Time": "March-June, 4AM-7PM<br/>July-August, 8AM-5PM<br/>September, 8AM-4PM",
    "datetime": {"3-6": ["4-19"],"7-8": ["8-17"],"9-9": ["8-16"]},
-   "IslandTime": "8AM-5PM"
+   "IslandTime": "8AM-5PM",
+   "islandhours": ["8-17"]
  },
  {
    "Name": "Peacock Butterfly",
@@ -31,7 +32,8 @@
    "Location": "Above blue, purple or black Flowers",
    "Time": "March-June, 4AM-7PM<br/>July, 4AM-5PM<br/>August, 8AM-5PM<br/>September, 8AM-4PM",
    "datetime": {"3-6": ["4-19"], "7-7": ["4-17"], "8-8": ["8-17"], "9-9": ["8-16"]},
-   "IslandTime": "8AM-5PM"
+   "IslandTime": "8AM-5PM",
+   "islandhours": ["8-17"]
  },
  {
    "Name": "Monarch Butterfly",
@@ -40,7 +42,8 @@
    "Location": "Above Flowers",
    "Time": "September-October, 4AM-5PM<br/>November, 8AM-5PM",
    "datetime": {"9-10": ["4-17"], "11-11": ["8-17"]},
-   "IslandTime": "8AM-5PM"
+   "IslandTime": "8AM-5PM",
+   "islandhours": ["8-17"]
  },
  {
    "Name": "Emperor Butterfly",
@@ -49,7 +52,8 @@
    "Location": "Above Flowers",
    "Time": "June-September, 7PM-8AM",
    "datetime": {"6-9": ["19-8"]},
-   "IslandTime": "7PM-8AM"
+   "IslandTime": "7PM-8AM",
+   "islandhours": ["19-8"]
  },
  {
    "Name": "Agrias Butterfly",
@@ -58,7 +62,8 @@
    "Location": "Above Flowers",
    "Time": "June-September, 8AM-5PM",
    "datetime": {"6-9": ["8-17"]},
-   "IslandTime": "8AM-5PM"
+   "IslandTime": "8AM-5PM",
+   "islandhours": ["8-17"]
  },
  {
    "Name": "Raja Brooke Butterfly",
@@ -75,7 +80,8 @@
    "Location": "Above Flowers",
    "Time": "June-September, 8AM-4PM",
    "datetime": {"6-9": ["8-16"]},
-   "IslandTime": "8AM-4PM"
+   "IslandTime": "8AM-4PM",
+   "islandhours": ["8-16"]
  },
  {
    "Name": "Moth",
@@ -92,7 +98,8 @@
    "Location": "Tree Trunk",
    "Time": "June-September, 7PM-4AM",
    "datetime": {"6-9": ["19-4"]},
-   "IslandTime": "7PM-4AM"
+   "IslandTime": "7PM-4AM",
+   "islandhours": ["19-4"]
  },
  {
    "Name": "Honeybee",
@@ -109,7 +116,8 @@
    "Location": "Shake Trees",
    "Time": "All Year, All Day",
    "datetime": "*",
-   "IslandTime": "All Day"
+   "IslandTime": "All Day",
+   "islandhours": ["0-24"]
  },
  {
    "Name": "Long Locust",
@@ -118,7 +126,8 @@
    "Location": "Ground",
    "Time": "May-November, 8AM-7PM",
    "datetime": {"5-11": ["8-19"]},
-   "IslandTime": "8AM-7PM"
+   "IslandTime": "8AM-7PM",
+   "islandhours": ["8-19"]
  },
  {
    "Name": "Migratory Locust",
@@ -127,7 +136,8 @@
    "Location": "Ground",
    "Time": "August-November, 8AM-7PM",
    "datetime": {"8-11": ["8-19"]},
-   "IslandTime": "8AM-7PM"
+   "IslandTime": "8AM-7PM",
+   "islandhours": ["8-19"]
  },
  {
    "Name": "Rice Grasshopper",
@@ -144,7 +154,8 @@
    "Location": "On Flowers",
    "Time": "April-November, 8AM-5PM",
    "datetime": {"4-11": ["8-17"]},
-   "IslandTime": "8AM-5PM"
+   "IslandTime": "8AM-5PM",
+   "islandhours": ["8-17"]
  },
  {
    "Name": "Orchid Mantis",
@@ -153,7 +164,8 @@
    "Location": "White Flowers",
    "Time": "April-November, 8AM-5PM",
    "datetime": {"4-11": ["8-17"]},
-   "IslandTime": "8AM-5PM"
+   "IslandTime": "8AM-5PM",
+   "islandhours": ["8-17"]
  },
  {
    "Name": "Brown Cicada",
@@ -210,7 +222,8 @@
    "Location": "Tree Trunk",
    "Time": "June 4PM-7PM or 11PM-8AM<br/>July-August, 4PM-8AM<br/>September, 4PM-7PM or 11PM-8AM",
    "datetime": {"6-6": ["16-19","23-8"], "7-8":["16-8"], "9-9": ["16-19","23-8"]},
-   "IslandTime": "4PM-8AM"
+   "IslandTime": "4PM-8AM",
+   "islandhours": ["16-8"]
  },
  {
    "Name": "Red Dragonfly",
@@ -251,7 +264,8 @@
    "Location": "Candy, Spoiled Turnips, Rotten Fruit",
    "Time": "All Year, All Day",
    "datetime": "*",
-   "IslandTime": "All Day"
+   "IslandTime": "All Day",
+   "islandhours": ["0-24"]
  },
  {
    "Name": "Pondskater",
@@ -308,7 +322,8 @@
    "Location": "Ground",
    "Time": "July, 4PM-5PM<br/>August-September, 8AM-5PM",
    "datetime": {"7-7":["16-17"], "8-9":["8-17"]},
-   "IslandTime": "8AM-5PM"
+   "IslandTime": "8AM-5PM",
+   "islandhours": ["8-17"]
  },
  {
    "Name": "Mole Cricket",
@@ -333,7 +348,8 @@
    "Location": "Tree Trunk",
    "Time": "July-August, 4AM-8AM or 5PM-7PM<br/>September-November, 4AM-7PM",
    "datetime": {"7-8":["4-8","17-19"], "9-11":["4-19"]},
-   "IslandTime": "4AM-8AM or 5PM-7PM"
+   "IslandTime": "4AM-8AM or 5PM-7PM",
+   "islandhours": ["4-8","17-19"]
  },
  {
    "Name": "Bagworm",
@@ -366,7 +382,8 @@
    "Location": "Tree Stumps",
    "Time": "July-August, 11PM-7PM",
    "datetime": {"7-8": ["23-19"]},
-   "IslandTime": "11PM-7PM"
+   "IslandTime": "11PM-7PM",
+   "islandhours": ["23-19"]
  },
  {
    "Name": "Tiger Beetle",
@@ -375,7 +392,8 @@
    "Location": "Ground",
    "Time": "March-September, 8AM-7PM<br/>October, 4AM-5PM",
    "datetime": {"3-9": ["8-19"], "10-10": ["4-17"]},
-   "IslandTime": "4PM-11PM"
+   "IslandTime": "4PM-11PM",
+   "islandhours": ["16-23"]
  },
  {
    "Name": "Dung Beetle",
@@ -392,7 +410,8 @@
    "Location": "Beach",
    "Time": "All Year, All Day",
    "datetime": "*",
-   "IslandTime": "All Day"
+   "IslandTime": "All Day",
+   "islandhours": ["0-24"]
  },
  {
    "Name": "Hermit Crab",
@@ -400,7 +419,8 @@
    "Rarity": 5,
    "Location": "Island Beach",
    "Time": "",
-   "IslandTime": "7PM-8AM"
+   "IslandTime": "7PM-8AM",
+   "islandhours": ["19-8"]
  },
  {
    "Name": "Firefly",
@@ -417,7 +437,8 @@
    "Location": "Tree Trunk",
    "Time": "July-August, All Day<br/>September, 7PM-8AM",
    "datetime": {"7-8": ["0-24"], "9-9": ["19-8"]},
-   "IslandTime": "All Day "
+   "IslandTime": "All Day ",
+   "islandhours": ["0-24"]
  },
  {
    "Name": "Scarab Beetle",
@@ -426,7 +447,8 @@
    "Location": "Tree Trunk",
    "Time": "July-August, 11PM-8AM",
    "datetime": {"7-8": ["23-8"]},
-   "IslandTime": "11PM-8AM"
+   "IslandTime": "11PM-8AM",
+   "islandhours": ["23-8"]
  },
  {
    "Name": "Jewel Beetle",
@@ -435,7 +457,8 @@
    "Location": "Tree Trunk",
    "Time": "July-August, 8AM-5PM",
    "datetime": {"7-8": ["8-17"]},
-   "IslandTime": "8AM-5PM"
+   "IslandTime": "8AM-5PM",
+   "islandhours": ["8-17"]
  },
  {
    "Name": "Miyama Stag",
@@ -444,7 +467,8 @@
    "Location": "Tree Trunk",
    "Time": "July-September, All Day",
    "datetime": {"7-9": ["0-24"]},
-   "IslandTime": "All Day"
+   "IslandTime": "All Day",
+   "islandhours": ["0-24"]
  },
  {
    "Name": "Saw Stag",
@@ -453,7 +477,8 @@
    "Location": "Tree Trunk",
    "Time": "July-August, All Day",
    "datetime": {"7-8": ["0-24"]},
-   "IslandTime": "All Day"
+   "IslandTime": "All Day",
+   "islandhours": ["0-24"]
  },
  {
    "Name": "Giant Stag",
@@ -462,7 +487,8 @@
    "Location": "Tree Trunk",
    "Time": "July-August, 11PM-8AM",
    "datetime": {"7-8": ["23-8"]},
-   "IslandTime": "11PM-8AM"
+   "IslandTime": "11PM-8AM",
+   "islandhours": ["23-8"]
  },
  {
    "Name": "Rainbow Stag",
@@ -471,7 +497,8 @@
    "Location": "Tree Trunk",
    "Time": "June, 7PM-8AM<br/>July-August, 5PM-8AM<br/>September, 7PM-8AM",
    "datetime": {"6-6": ["19-8"], "7-8": ["17-8"], "9-9": ["19-8"]},
-   "IslandTime": "5PM-8AM"
+   "IslandTime": "5PM-8AM",
+   "islandhours": ["17-8"]
  },
  {
    "Name": "Cyclommatus Stag",
@@ -480,7 +507,8 @@
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
    "datetime": {"7-8": ["17-8"]},
-   "IslandTime": "5PM-8AM"
+   "IslandTime": "5PM-8AM",
+   "islandhours": ["17-8"]
  },
  {
    "Name": "Golden Stag",
@@ -489,7 +517,8 @@
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
    "datetime": {"7-8": ["17-8"]},
-   "IslandTime": "5PM-8AM"
+   "IslandTime": "5PM-8AM",
+   "islandhours": ["17-8"]
  },
  {
    "Name": "Horned Dynastid",
@@ -498,7 +527,8 @@
    "Location": "Tree Trunk",
    "Time": "July-August, 5PM-8AM",
    "datetime": {"7-8": ["17-8"]},
-   "IslandTime": "5PM-8AM"
+   "IslandTime": "5PM-8AM",
+   "islandhours": ["17-8"]
  },
  {
    "Name": "Horned Atlas",
@@ -507,7 +537,8 @@
    "Location": "Palm Trunks",
    "Time": "June-August, 5PM-8AM",
    "datetime": {"6-8": ["17-8"]},
-   "IslandTime": "5PM-8AM"
+   "IslandTime": "5PM-8AM",
+   "islandhours": ["17-8"]
  },
  {
    "Name": "Horned Elephant",
@@ -516,7 +547,8 @@
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
    "datetime": {"7-8": ["17-8"]},
-   "IslandTime": "5PM-8AM"
+   "IslandTime": "5PM-8AM",
+   "islandhours": ["17-8"]
  },
  {
    "Name": "Horned Hercules",
@@ -525,7 +557,8 @@
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
    "datetime": {"7-8": ["17-8"]},
-   "IslandTime": "5PM-8AM"
+   "IslandTime": "5PM-8AM",
+   "islandhours": ["17-8"]
  },
  {
    "Name": "Goliath Beetle",
@@ -534,7 +567,8 @@
    "Location": "Palm Trunks",
    "Time": "June 7PM-8AM<br/>July-August, 5PM-8AM<br/>September, 7PM-8AM",
    "datetime": {"6-6": ["19-8"], "7-8": ["17-8"], "9-9": ["19-8"]},
-   "IslandTime": "5PM-8AM"
+   "IslandTime": "5PM-8AM",
+   "islandhours": ["17-8"]
  },
  {
    "Name": "Flea",
@@ -567,7 +601,8 @@
    "Location": "Garbage or Spoiled Turnips",
    "Time": "All Year, All Day",
    "datetime": "*",
-   "IslandTime": "All Day"
+   "IslandTime": "All Day",
+   "islandhours": ["0-24"]
  },
  {
    "Name": "House Centipede",
