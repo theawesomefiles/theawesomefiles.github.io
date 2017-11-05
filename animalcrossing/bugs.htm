@@ -80,18 +80,39 @@ function filterItem(obj,params,month,hour) {
 			}
 		}
 	}
+	
+	var passedIslandTimeValidation = true;
+	if(obj.islandHours != null) {
+		for(var hourEntry of obj.islandHours) {
+			var buffer = hourEntry.split('-');
+			var firstHour = parseInt(buffer[0]);
+			var lastHour = parseInt(buffer[1]);
+			var currentHour = hour;
+			
+			if(lastHour < firstHour) {
+				lastHour += 24;
+				if(currentHour < firstHour) {
+					currentHour += 24;
+				}
+			}
 
+			if(currentHour < firstHour || currentHour > lastHour) {
+				passedIslandTimeValidation = false;
+			}
+		}
+	}
+		
 	var showIsland = params['island'];
 	if(showIsland == 'only') {
-		if(obj.IslandTime == null) {
+		if(obj.IslandTime == null || !passedIslandTimeValidation) {
 			return false;
 		}
 	} else if (showIsland == 'false') {
-		if(obj.IslandTime != null && !passedDateValidation) {
+		if(!passedDateValidation) {
 			return false;
 		}
 	}
-	return obj.IslandTime != null || passedDateValidation;
+	return passedIslandTimeValidation || passedDateValidation;
 }
 
 function compareItems(x, y, sortField, sortOrder) {
