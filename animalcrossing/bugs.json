@@ -324,7 +324,7 @@
    "Rarity": 5,
    "Location": "Ground",
    "Time": "July-September, 8AM-5PM",
-   "datetime": {"7-11": ["8-17"]}
+   "datetime": {"7-9": ["8-17"]}
  },
  {
    "Name": "Walking Stick",
@@ -550,7 +550,7 @@
    "Rarity": 7,
    "Location": "Under Rock",
    "Time": "September-June, All Day<br/>July-August, 7PM-4AM",
-   "datetime": {"9-6",["0-24"], "7-8": ["19-4"]}
+   "datetime": {"9-6": ["0-24"], "7-8": ["19-4"]}
  },
  {
    "Name": "Mosquito",

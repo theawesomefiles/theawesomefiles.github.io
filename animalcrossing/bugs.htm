@@ -22,6 +22,13 @@ function stringFromObject(obj) {
 	return ret;
 }
 
+function* iter(o) {
+    var keys = Object.keys(o);
+    for (var i=0; i<keys.length; i++) {
+		yield {key: keys[i], value: o[keys[i]]};
+    }
+}
+
 function filterItem(obj,params,month,hour) {
 	if(params['show'] == 'all') {
 		return true;
@@ -29,29 +36,33 @@ function filterItem(obj,params,month,hour) {
 
 	var passedDateValidation = true;
 	if(obj.datetime != null && obj.datetime != '*') {
-		if(obj.datetime = '') {
+		if(obj.datetime == '') {
 			passedDateValidation = false;
 		}
-		else for(var dateTimeEntry of obj.datetime.entries()) {
-			var buffer = dateTimeEntry[0].split('-');
-			var firstMonth = parseInt(buffer[0]);
-			var lastMonth = parseInt(buffer[1]);
-			var currentMonth = month;
-			if(lastMonth < firstMonth) {
-				lastMonth += 12;
-				if(currentMonth < firstMonth) {
-					currentMonth += 12;
+		else {
+			obj.datetime[Symbol.iterator] = iter.bind(null, obj.datetime);
+
+			for(var dateTimeEntry of obj.datetime) {
+				var buffer = dateTimeEntry.key.split('-');
+				var firstMonth = parseInt(buffer[0]);
+				var lastMonth = parseInt(buffer[1]);
+				var currentMonth = month;
+				if(lastMonth < firstMonth) {
+					lastMonth += 12;
+					if(currentMonth < firstMonth) {
+						currentMonth += 12;
+					}
 				}
-			}
-			var currentHour = hour;
+				var currentHour = hour;
 			
-			if(currentMonth < firstMonth || currentMonth > lastMonth) {
-				passedDateValidation = false;
+				if(currentMonth < firstMonth || currentMonth > lastMonth) {
+					passedDateValidation = false;
+				}
 			}
 		}
 	}
 
-	var showIsland = params.get('island');
+	var showIsland = params['island'];
 	if(showIsland == 'only') {
 		if(obj.IslandTime == null) {
 			return false;
@@ -71,8 +82,8 @@ function compareItems(x, y, sortField, sortOrder) {
 }
 
 function sortItems(obj,params) {
-	var sortField = params.get('sf');
-	var sortOrder = params.get('so');
+	var sortField = params['sf'];
+	var sortOrder = params['so'];
 	if(sortField == null) {
 		sortField = 'Value';
 	}
@@ -88,10 +99,10 @@ function sortItems(obj,params) {
 }
 
 var json_obj;
+var searchParams;
 
 function process() {
-	let params = new URLSearchParams(location.search.slice(1));
-	json_obj = sortItems(json_obj,params);
+	json_obj = sortItems(json_obj,searchParams);
 
 	var resultHTML = "";
 	resultHTML += "<table><tbody>";
@@ -100,7 +111,7 @@ function process() {
 	var hour = new Date().getHours() + 1;
 	for(var i = 0; i < json_obj.length; i++) {
 		var dataObj = json_obj[i];
-		if(filterItem(dataObj,params,month,hour)) {
+		if(filterItem(dataObj,searchParams,month,hour)) {
 			resultHTML += "<tr>" 
 				+ stringFromObject(dataObj)
 				+"</tr>";
@@ -112,6 +123,11 @@ function process() {
 
 function load() {
 	json_obj = JSON.parse(Get("bugs.json"));
+	var urlParams = new URLSearchParams(location.search.slice(1));
+	searchParams = {};
+	for(var searchKey of urlParams) {
+		searchParams[searchKey[0]] = searchKey[1];
+	}
 	process();
 }
 </script>
