@@ -23,6 +23,9 @@ function stringFromObject(obj) {
 }
 
 function filterItem(obj,params,month,hour) {
+	if(params['show'] == 'all') {
+		return true;
+	}
 
 	var passedDateValidation = true;
 	if(obj.datetime != null && obj.datetime != '*') {

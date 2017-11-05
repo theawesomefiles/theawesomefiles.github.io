@@ -5,7 +5,7 @@
    "Rarity": 7,
    "Location": "Above Flowers",
    "Time": "March-June, 4AM-7PM<br/>September, 8AM-4PM",
-   "datetime": [{"3-6": ["4-19"]},{"9-9": ["8-16"]}]
+   "datetime": {"3-6": ["4-19"], "9-9": ["8-16"]}
  },
  {
    "Name": "Yellow Butterfly",
@@ -13,7 +13,7 @@
    "Rarity": 6,
    "Location": "Above Flowers",
    "Time": "March-June, 4AM-7PM<br/>September, 8AM-4PM",
-   "datetime": [{"3-6": ["4-19"]},{"9-9": ["8-16"]}]
+   "datetime": {"3-6": ["4-19"], "9-9": ["8-16"]}
  },
  {
    "Name": "Tiger Butterfly",
@@ -21,7 +21,7 @@
    "Rarity": 5,
    "Location": "Above red or pink Flowers",
    "Time": "March-June, 4AM-7PM<br/>July-August, 8AM-5PM<br/>September, 8AM-4PM",
-   "datetime": [{"3-6": ["4-19"]},{"7-8": ["8-17"]},{"9-9": ["8-16"]}],
+   "datetime": {"3-6": ["4-19"],"7-8": ["8-17"],"9-9": ["8-16"]},
    "IslandTime": "8AM-5PM"
  },
  {
@@ -30,7 +30,7 @@
    "Rarity": 4,
    "Location": "Above blue, purple or black Flowers",
    "Time": "March-June, 4AM-7PM<br/>July, 4AM-5PM<br/>August, 8AM-5PM<br/>September, 8AM-4PM",
-   "datetime": [{"3-6": ["4-19"]},{"7-7": ["4-17"]},{"8-8": ["8-17"]},{"9-9": ["8-16"]}],
+   "datetime": {"3-6": ["4-19"], "7-7": ["4-17"], "8-8": ["8-17"], "9-9": ["8-16"]},
    "IslandTime": "8AM-5PM"
  },
  {
@@ -39,7 +39,7 @@
    "Rarity": 6,
    "Location": "Above Flowers",
    "Time": "September-October, 4AM-5PM<br/>November, 8AM-5PM",
-   "datetime": [{"9-10": ["4-17"]},{"11-11": ["8-17"]}],
+   "datetime": {"9-10": ["4-17"], "11-11": ["8-17"]},
    "IslandTime": "8AM-5PM"
  },
  {
@@ -48,7 +48,7 @@
    "Rarity": 3,
    "Location": "Above Flowers",
    "Time": "June-September, 7PM-8AM",
-   "datetime": [{"6-9": ["19-8"]}],
+   "datetime": {"6-9": ["19-8"]},
    "IslandTime": "7PM-8AM"
  },
  {
@@ -57,7 +57,7 @@
    "Rarity": 3,
    "Location": "Above Flowers",
    "Time": "June-September, 8AM-5PM",
-   "datetime": [{"6-9": ["8-17"]}],
+   "datetime": {"6-9": ["8-17"]},
    "IslandTime": "8AM-5PM"
  },
  {
@@ -66,7 +66,7 @@
    "Rarity": 3,
    "Location": "River or Pond",
    "Time": "May-September, 8AM-5PM",
-   "datetime": [{"5-9": ["8-17"]}]
+   "datetime": {"5-9": ["8-17"]}
  },
  {
    "Name": "Birdwing Butterfly",
@@ -74,7 +74,7 @@
    "Rarity": 2,
    "Location": "Above Flowers",
    "Time": "June-September, 8AM-4PM",
-   "datetime": [{"6-9": ["8-16"]}],
+   "datetime": {"6-9": ["8-16"]},
    "IslandTime": "8AM-4PM"
  },
  {
@@ -83,7 +83,7 @@
    "Rarity": 7,
    "Location": "Outdoor Lights",
    "Time": "May-September, 7PM-4AM",
-   "datetime": [{"5-9": ["19-4"]}]
+   "datetime": {"5-9": ["19-4"]}
  },
  {
    "Name": "Oak Silk Moth",
@@ -91,7 +91,7 @@
    "Rarity": 2,
    "Location": "Tree Trunk",
    "Time": "June-September, 7PM-4AM",
-   "datetime": [{"6-9": ["19-4"]}],
+   "datetime": {"6-9": ["19-4"]},
    "IslandTime": "7PM-4AM"
  },
  {
@@ -100,7 +100,7 @@
    "Rarity": 6,
    "Location": "Above Flowers",
    "Time": "March-June, 8AM-5PM<br/>July, 8AM-4PM",
-   "datetime": [{"3-6": ["8-17"]},{"7-7": ["8-16"]}]
+   "datetime": {"3-6": ["8-17"], "7-7": ["8-16"]}
  },
  {
    "Name": "Bee",
@@ -117,7 +117,7 @@
    "Rarity": 7,
    "Location": "Ground",
    "Time": "May-November, 8AM-7PM",
-   "datetime": [{"5-11": ["8-19"]}],
+   "datetime": {"5-11": ["8-19"]},
    "IslandTime": "8AM-7PM"
  },
  {
@@ -126,7 +126,7 @@
    "Rarity": 5,
    "Location": "Ground",
    "Time": "August-November, 8AM-7PM",
-   "datetime": [{"8-11": ["8-19"]}],
+   "datetime": {"8-11": ["8-19"]},
    "IslandTime": "8AM-7PM"
  },
  {
@@ -135,7 +135,7 @@
    "Rarity": 2,
    "Location": "Ground",
    "Time": "August-November, 8AM-7PM",
-   "datetime": [{"8-11": ["8-19"]}]
+   "datetime": {"8-11": ["8-19"]}
  },
  {
    "Name": "Mantis",
@@ -143,7 +143,7 @@
    "Rarity": 4,
    "Location": "On Flowers",
    "Time": "April-November, 8AM-5PM",
-   "datetime": [{"4-11": ["8-17"]}],
+   "datetime": {"4-11": ["8-17"]},
    "IslandTime": "8AM-5PM"
  },
  {
@@ -152,7 +152,7 @@
    "Rarity": 3,
    "Location": "White Flowers",
    "Time": "April-November, 8AM-5PM",
-   "datetime": [{"4-11": ["8-17"]}],
+   "datetime": {"4-11": ["8-17"]},
    "IslandTime": "8AM-5PM"
  },
  {
@@ -161,7 +161,7 @@
    "Rarity": 7,
    "Location": "Tree Trunk",
    "Time": "July-August, 8AM-5PM",
-   "datetime": [{"7-8": ["8-17"]}]
+   "datetime": {"7-8": ["8-17"]}
  },
  {
    "Name": "Robust Cicada",
@@ -169,7 +169,7 @@
    "Rarity": 7,
    "Location": "Tree Trunk",
    "Time": "July-August, 8AM-5PM",
-   "datetime": [{"7-8": ["8-17"]}]
+   "datetime": {"7-8": ["8-17"]}
  },
  {
    "Name": "Giant Cicada",
@@ -177,7 +177,7 @@
    "Rarity": 7,
    "Location": "Tree Trunk",
    "Time": "July-August, 8AM-5PM",
-   "datetime": [{"7-8": ["8-17"]}]
+   "datetime": {"7-8": ["8-17"]}
  },
  {
    "Name": "Walker Cicada",
@@ -185,7 +185,7 @@
    "Rarity": 7,
    "Location": "Tree Trunk",
    "Time": "July-September, 8AM-5PM",
-   "datetime": [{"7-9": ["8-17"]}]
+   "datetime": {"7-9": ["8-17"]}
  },
  {
    "Name": "Evening Cicada",
@@ -193,7 +193,7 @@
    "Rarity": 7,
    "Location": "Tree Trunk",
    "Time": "July-August, 4AM-8AM or 4PM-7PM",
-   "datetime": [{"7-8": ["4-8","16-19"]}]
+   "datetime": {"7-8": ["4-8","16-19"]}
  },
  {
    "Name": "Cicada Shell",
@@ -201,7 +201,7 @@
    "Rarity": 7,
    "Location": "Tree Trunk",
    "Time": "July-August, All Day",
-   "datetime": [{"7-8": ["0-24"]}]
+   "datetime": {"7-8": ["0-24"]}
  },
  {
    "Name": "Lantern Fly",
@@ -209,7 +209,7 @@
    "Rarity": 3,
    "Location": "Tree Trunk",
    "Time": "June 4PM-7PM or 11PM-8AM<br/>July-August, 4PM-8AM<br/>September, 4PM-7PM or 11PM-8AM",
-   "datetime": [{"6-6": ["16-19","23-8"]},{"7-8":["16-8"]},{"9-9": ["16-19","23-8"]}],
+   "datetime": {"6-6": ["16-19","23-8"], "7-8":["16-8"], "9-9": ["16-19","23-8"]},
    "IslandTime": "4PM-8AM"
  },
  {
@@ -218,7 +218,7 @@
    "Rarity": 6,
    "Location": "Flying",
    "Time": "September-October, 8AM-7PM",
-   "datetime": [{"9-10": ["8-19"]}]
+   "datetime": {"9-10": ["8-19"]}
  },
  {
    "Name": "Darner Dragonfly",
@@ -226,7 +226,7 @@
    "Rarity": 5,
    "Location": "Flying",
    "Time": "June-August, 8AM-5PM",
-   "datetime": [{"6-8": ["8-17"]}]
+   "datetime": {"6-8": ["8-17"]}
  },
  {
    "Name": "Banded Dragonfly",
@@ -234,7 +234,7 @@
    "Rarity": 4,
    "Location": "Flying",
    "Time": "July-August, 8AM-5PM",
-   "datetime": [{"7-8": ["8-17"]}]
+   "datetime": {"7-8": ["8-17"]}
  },
  {
    "Name": "Giant Petaltail",
@@ -242,7 +242,7 @@
    "Rarity": 2,
    "Location": "Flying",
    "Time": "August-October, 5PM-7PM",
-   "datetime": [{"8-10": ["17-19"]}]
+   "datetime": {"8-10": ["17-19"]}
  },
  {
    "Name": "Ant",
@@ -259,7 +259,7 @@
    "Rarity": 6,
    "Location": "River, Pond",
    "Time": "May-September, 8AM-7PM",
-   "datetime": [{"5-9": ["8-19"]}]
+   "datetime": {"5-9": ["8-19"]}
  },
  {
    "Name": "Diving Beetle",
@@ -267,7 +267,7 @@
    "Rarity": 5,
    "Location": "River, Ponds",
    "Time": "May-September, 8AM-5PM",
-   "datetime": [{"5-9": ["8-17"]}]
+   "datetime": {"5-9": ["8-17"]}
  },
  {
    "Name": "Stinkbug",
@@ -275,7 +275,7 @@
    "Rarity": 7,
    "Location": "Tree Trunks",
    "Time": "April-October, All Day",
-   "datetime": [{"4-10": ["0-24"]}]
+   "datetime": {"4-10": ["0-24"]}
  },
  {
    "Name": "Snail",
@@ -283,7 +283,7 @@
    "Rarity": 6,
    "Location": "On Bushes while raining",
    "Time": "April-September, All Day",
-   "datetime": [{"4-9": ["0-24"]}]
+   "datetime": {"4-9": ["0-24"]}
  },
  {
    "Name": "Cricket",
@@ -291,7 +291,7 @@
    "Rarity": 7,
    "Location": "Ground",
    "Time": "September-November, 5PM-8AM",
-   "datetime": [{"9-11": ["17-8"]}]
+   "datetime": {"9-11": ["17-8"]}
  },
  {
    "Name": "Bell Cricket",
@@ -299,7 +299,7 @@
    "Rarity": 6,
    "Location": "Ground",
    "Time": "September-October, 5PM-8AM",
-   "datetime": [{"9-10": ["17-8"]}]
+   "datetime": {"9-10": ["17-8"]}
  },
  {
    "Name": "Grasshopper",
@@ -307,7 +307,7 @@
    "Rarity": 6,
    "Location": "Ground",
    "Time": "July, 4PM-5PM<br/>August-September, 8AM-5PM",
-   "datetime": [{"7-7":["16-17"]},{"8-9":["8-17"]}],
+   "datetime": {"7-7":["16-17"], "8-9":["8-17"]},
    "IslandTime": "8AM-5PM"
  },
  {
@@ -316,7 +316,7 @@
    "Rarity": 4,
    "Location": "Underground<br/>(Listen for Sound and Dig)",
    "Time": "November-May, All Day",
-   "datetime": [{"11-5": ["0-24"]}]
+   "datetime": {"11-5": ["0-24"]}
  },
  {
    "Name": "Walking Leaf",
@@ -324,7 +324,7 @@
    "Rarity": 5,
    "Location": "Ground",
    "Time": "July-September, 8AM-5PM",
-   "datetime": [{"7-11": ["8-17"]}]
+   "datetime": {"7-11": ["8-17"]}
  },
  {
    "Name": "Walking Stick",
@@ -332,7 +332,7 @@
    "Rarity": 4,
    "Location": "Tree Trunk",
    "Time": "July-August, 4AM-8AM or 5PM-7PM<br/>September-November, 4AM-7PM",
-   "datetime": [{"7-8":["4-8","17-19"]},{"9-11":["4-19"]}],
+   "datetime": {"7-8":["4-8","17-19"], "9-11":["4-19"]},
    "IslandTime": "4AM-8AM or 5PM-7PM"
  },
  {
@@ -341,7 +341,7 @@
    "Rarity": 6,
    "Location": "Shake or Hit Trees with Net",
    "Time": "October-February, All Day",
-   "datetime": [{"10-2": ["0-24"]}]
+   "datetime": {"10-2": ["0-24"]}
  },
  {
    "Name": "Ladybug",
@@ -349,7 +349,7 @@
    "Rarity": 6,
    "Location": "On Flowers",
    "Time": "March-June 8AM-5PM<br/>October 8AM-5PM",
-   "datetime": [{"3-6": ["8-17"]},{"10-10": ["8-17"]}]
+   "datetime": {"3-6": ["8-17"], "10-10": ["8-17"]}
  },
  {
    "Name": "Violin Beetle",
@@ -357,7 +357,7 @@
    "Rarity": 4,
    "Location": "Tree Stumps",
    "Time": "June, 4AM-7PM<br/>September-October, 4AM-5PM<br/>November, 8AM-5PM",
-   "datetime": [{"6-6": ["4-19"]},{"9-10": ["4-17"]},{"11-11": ["8-17"]}]
+   "datetime": {"6-6": ["4-19"], "9-10": ["4-17"], "11-11": ["8-17"]}
  },
  {
    "Name": "Longhorn Beetle",
@@ -365,7 +365,7 @@
    "Rarity": 4,
    "Location": "Tree Stumps",
    "Time": "July-August, 11PM-7PM",
-   "datetime": [{"7-8": ["23-19"]}],
+   "datetime": {"7-8": ["23-19"]},
    "IslandTime": "11PM-7PM"
  },
  {
@@ -374,7 +374,7 @@
    "Rarity": 3,
    "Location": "Ground",
    "Time": "March-September, 8AM-7PM<br/>October, 4AM-5PM",
-   "datetime": [{"3-9": ["8-19"]},{"10-10": ["4-17"]}],
+   "datetime": {"3-9": ["8-19"], "10-10": ["4-17"]},
    "IslandTime": "4PM-11PM"
  },
  {
@@ -383,7 +383,7 @@
    "Rarity": 3,
    "Location": "Snowballs",
    "Time": "December-February, 5PM-8AM",
-   "datetime": [{"12-2": ["17-8"]}]
+   "datetime": {"12-2": ["17-8"]}
  },
  {
    "Name": "Wharf Roach",
@@ -408,7 +408,7 @@
    "Rarity": 5,
    "Location": "Fresh Water",
    "Time": "June, 7PM-4AM",
-   "datetime": [{"6-6": ["19-4"]}]
+   "datetime": {"6-6": ["19-4"]}
  },
  {
    "Name": "Fruit Beetle",
@@ -416,7 +416,7 @@
    "Rarity": 6,
    "Location": "Tree Trunk",
    "Time": "July-August, All Day<br/>September, 7PM-8AM",
-   "datetime": [{"7-8": ["0-24"]},{"9-9": ["19-8"]}],
+   "datetime": {"7-8": ["0-24"], "9-9": ["19-8"]},
    "IslandTime": "All Day "
  },
  {
@@ -425,7 +425,7 @@
    "Rarity": 2,
    "Location": "Tree Trunk",
    "Time": "July-August, 11PM-8AM",
-   "datetime": [{"7-8": ["23-8"]}],
+   "datetime": {"7-8": ["23-8"]},
    "IslandTime": "11PM-8AM"
  },
  {
@@ -434,7 +434,7 @@
    "Rarity": 4,
    "Location": "Tree Trunk",
    "Time": "July-August, 8AM-5PM",
-   "datetime": [{"7-8": ["8-17"]}],
+   "datetime": {"7-8": ["8-17"]},
    "IslandTime": "8AM-5PM"
  },
  {
@@ -443,7 +443,7 @@
    "Rarity": 4,
    "Location": "Tree Trunk",
    "Time": "July-September, All Day",
-   "datetime": [{"7-9": ["0-24"]}],
+   "datetime": {"7-9": ["0-24"]},
    "IslandTime": "All Day"
  },
  {
@@ -452,7 +452,7 @@
    "Rarity": 3,
    "Location": "Tree Trunk",
    "Time": "July-August, All Day",
-   "datetime": [{"7-8": ["0-24"]}],
+   "datetime": {"7-8": ["0-24"]},
    "IslandTime": "All Day"
  },
  {
@@ -461,7 +461,7 @@
    "Rarity": 3,
    "Location": "Tree Trunk",
    "Time": "July-August, 11PM-8AM",
-   "datetime": [{"7-8": ["23-8"]}],
+   "datetime": {"7-8": ["23-8"]},
    "IslandTime": "11PM-8AM"
  },
  {
@@ -470,7 +470,7 @@
    "Rarity": 2,
    "Location": "Tree Trunk",
    "Time": "June, 7PM-8AM<br/>July-August, 5PM-8AM<br/>September, 7PM-8AM",
-   "datetime": [{"6-6": ["19-8"]},{"7-8": ["17-8"]},{"9-9": ["19-8"]}],
+   "datetime": {"6-6": ["19-8"], "7-8": ["17-8"], "9-9": ["19-8"]},
    "IslandTime": "5PM-8AM"
  },
  {
@@ -479,7 +479,7 @@
    "Rarity": 2,
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
-   "datetime": [{"7-8": ["17-8"]}],
+   "datetime": {"7-8": ["17-8"]},
    "IslandTime": "5PM-8AM"
  },
  {
@@ -488,7 +488,7 @@
    "Rarity": 1,
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
-   "datetime": [{"7-8": ["17-8"]}],
+   "datetime": {"7-8": ["17-8"]},
    "IslandTime": "5PM-8AM"
  },
  {
@@ -497,7 +497,7 @@
    "Rarity": 4,
    "Location": "Tree Trunk",
    "Time": "July-August, 5PM-8AM",
-   "datetime": [{"7-8": ["17-8"]}],
+   "datetime": {"7-8": ["17-8"]},
    "IslandTime": "5PM-8AM"
  },
  {
@@ -506,7 +506,7 @@
    "Rarity": 2,
    "Location": "Palm Trunks",
    "Time": "June-August, 5PM-8AM",
-   "datetime": [{"6-8": ["17-8"]}],
+   "datetime": {"6-8": ["17-8"]},
    "IslandTime": "5PM-8AM"
  },
  {
@@ -515,7 +515,7 @@
    "Rarity": 3,
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
-   "datetime": [{"7-8": ["17-8"]}],
+   "datetime": {"7-8": ["17-8"]},
    "IslandTime": "5PM-8AM"
  },
  {
@@ -524,7 +524,7 @@
    "Rarity": 1,
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
-   "datetime": [{"7-8": ["17-8"]}],
+   "datetime": {"7-8": ["17-8"]},
    "IslandTime": "5PM-8AM"
  },
  {
@@ -533,7 +533,7 @@
    "Rarity": 2,
    "Location": "Palm Trunks",
    "Time": "June 7PM-8AM<br/>July-August, 5PM-8AM<br/>September, 7PM-8AM",
-   "datetime": [{"6-6": ["19-8"]},{"7-8": ["17-8"]},{"9-9": ["19-8"]}],
+   "datetime": {"6-6": ["19-8"], "7-8": ["17-8"], "9-9": ["19-8"]},
    "IslandTime": "5PM-8AM"
  },
  {
@@ -542,7 +542,7 @@
    "Rarity": 7,
    "Location": "On Villager",
    "Time": "March-November, All Day",
-   "datetime": [{"3-11": ["0-24"]}]
+   "datetime": {"3-11": ["0-24"]}
  },
  {
    "Name": "Pillbug",
@@ -550,7 +550,7 @@
    "Rarity": 7,
    "Location": "Under Rock",
    "Time": "September-June, All Day<br/>July-August, 7PM-4AM",
-   "datetime": [{"9-6",["0-24"]},{"7-8": ["19-4"]}]
+   "datetime": {"9-6",["0-24"], "7-8": ["19-4"]}
  },
  {
    "Name": "Mosquito",
@@ -558,7 +558,7 @@
    "Rarity": 7,
    "Location": "Flying",
    "Time": "June-September, 5PM-4AM",
-   "datetime": [{"6-9": ["17-4"]}]
+   "datetime": {"6-9": ["17-4"]}
  },
  {
    "Name": "Fly",
@@ -575,7 +575,7 @@
    "Rarity": 6,
    "Location": "Strike Rocks with Shovel",
    "Time": "August-October, 7PM-8AM",
-   "datetime": [{"8-10": ["19-8"]}]
+   "datetime": {"8-10": ["19-8"]}
  },
  {
    "Name": "Centipede",
@@ -583,7 +583,7 @@
    "Rarity": 4,
    "Location": "Strike Rocks with Shovel",
    "Time": "June-February, 4PM-11PM",
-   "datetime": [{"6-2": ["16-23"]}]
+   "datetime": {"6-2": ["16-23"]}
  },
  {
    "Name": "Spider",
@@ -591,7 +591,7 @@
    "Rarity": 5,
    "Location": "Shake or Hit Trees with Net",
    "Time": "March-June, All Day<br/>July-August, 7PM-8AM<br/>September, All Day<br/>October, 11PM-4PM",
-   "datetime": [{"3-6":["0-24"]},{"7-8":["19-8"]},{"9-9":["0-24"]},{"10-10":["23-16"]}]
+   "datetime": {"3-6":["0-24"], "7-8":["19-8"], "9-9":["0-24"], "10-10":["23-16"]}
  },
  {
    "Name": "Tarantula",
@@ -599,7 +599,7 @@
    "Rarity": 3,
    "Location": "Ground",
    "Time": "June-August, 7PM-4AM",
-   "datetime": [{"6-8": ["19-4"]}]
+   "datetime": {"6-8": ["19-4"]}
  },
  {
    "Name": "Scorpion",
@@ -607,6 +607,6 @@
    "Rarity": 3,
    "Location": "Ground",
    "Time": "July-September, 7PM-4AM",
-   "datetime": [{"7-9":["19-4"]}]
+   "datetime": {"7-9":["19-4"]}
  }
 ]
