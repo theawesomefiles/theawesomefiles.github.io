@@ -201,7 +201,7 @@
    "Rarity": 7,
    "Location": "Tree Trunk",
    "Time": "July-August, All Day",
-   "datetime": [{"7-8": ["0-23"]}]
+   "datetime": [{"7-8": ["0-24"]}]
  },
  {
    "Name": "Lantern Fly",
@@ -275,7 +275,7 @@
    "Rarity": 7,
    "Location": "Tree Trunks",
    "Time": "April-October, All Day",
-   "datetime": [{"4-10": ["0-23"]}]
+   "datetime": [{"4-10": ["0-24"]}]
  },
  {
    "Name": "Snail",
@@ -283,7 +283,7 @@
    "Rarity": 6,
    "Location": "On Bushes while raining",
    "Time": "April-September, All Day",
-   "datetime": [{"4-9": ["0-23"]}]
+   "datetime": [{"4-9": ["0-24"]}]
  },
  {
    "Name": "Cricket",
@@ -316,7 +316,7 @@
    "Rarity": 4,
    "Location": "Underground<br/>(Listen for Sound and Dig)",
    "Time": "November-May, All Day",
-   "datetime": [{"11-5": ["0-23"]}]
+   "datetime": [{"11-5": ["0-24"]}]
  },
  {
    "Name": "Walking Leaf",
@@ -504,6 +504,7 @@
    "Rarity": 1,
    "Location": "Palm Trunks",
    "Time": "July-August, 5PM-8AM",
+   "datetime": [{"7-8": ["17-8"]}],
    "IslandTime": "5PM-8AM"
  },
  {
@@ -512,6 +513,7 @@
    "Rarity": 2,
    "Location": "Palm Trunks",
    "Time": "June 7PM-8AM<br/>July-August, 5PM-8AM<br/>September, 7PM-8AM",
+   "datetime": [{"6-6": ["19-8"]},{"7-8": ["17-8"]},{"9-9": ["19-8"]}],
    "IslandTime": "5PM-8AM"
  },
  {
@@ -519,21 +521,24 @@
    "Value": 70,
    "Rarity": 7,
    "Location": "On Villager",
-   "Time": "March-November, All Day"
+   "Time": "March-November, All Day",
+   "datetime": [{"3-11": ["0-24"]}]
  },
  {
    "Name": "Pillbug",
    "Value": 250,
    "Rarity": 7,
    "Location": "Under Rock",
-   "Time": "September-June, All Day<br/>July-August, 7PM-4AM"
+   "Time": "September-June, All Day<br/>July-August, 7PM-4AM",
+   "datetime": [{"9-6",["0-24"]},{"7-8": ["19-4"]}]
  },
  {
    "Name": "Mosquito",
    "Value": 130,
    "Rarity": 7,
    "Location": "Flying",
-   "Time": "June-September, 5PM-4AM"
+   "Time": "June-September, 5PM-4AM",
+   "datetime": [{"6-9": ["17-4"]}]
  },
  {
    "Name": "Fly",
@@ -541,6 +546,7 @@
    "Rarity": 7,
    "Location": "Garbage or Spoiled Turnips",
    "Time": "All Year, All Day",
+   "datetime": "*",
    "IslandTime": "All Day"
  },
  {
@@ -548,34 +554,39 @@
    "Value": 250,
    "Rarity": 6,
    "Location": "Strike Rocks with Shovel",
-   "Time": "August-October, 7PM-8AM"
+   "Time": "August-October, 7PM-8AM",
+   "datetime": [{"8-10": ["19-8"]}]
  },
  {
    "Name": "Centipede",
    "Value": 300,
    "Rarity": 4,
    "Location": "Strike Rocks with Shovel",
-   "Time": "June-February, 4PM-11PM"
+   "Time": "June-February, 4PM-11PM",
+   "datetime": [{"6-2": ["16-23"]}]
  },
  {
    "Name": "Spider",
    "Value": 300,
    "Rarity": 5,
    "Location": "Shake or Hit Trees with Net",
-   "Time": "March-June, All Day<br/>July-August, 7PM-8AM<br/>September, All Day<br/>October, 11PM-4PM"
+   "Time": "March-June, All Day<br/>July-August, 7PM-8AM<br/>September, All Day<br/>October, 11PM-4PM",
+   "datetime": [{"3-6":["0-24"]},{"7-8":["19-8"]},{"9-9":["0-24"]},{"10-10":["23-16"]}]
  },
  {
    "Name": "Tarantula",
    "Value": 8000,
    "Rarity": 3,
    "Location": "Ground",
-   "Time": "June-August, 7PM-4AM"
+   "Time": "June-August, 7PM-4AM",
+   "datetime": [{"6-8": ["19-4"]}]
  },
  {
    "Name": "Scorpion",
    "Value": 8000,
    "Rarity": 3,
    "Location": "Ground",
-   "Time": "July-September, 7PM-4AM"
+   "Time": "July-September, 7PM-4AM",
+   "datetime": [{"7-9":["19-4"]}]
  }
 ]
