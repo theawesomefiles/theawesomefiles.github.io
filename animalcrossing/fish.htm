@@ -104,17 +104,17 @@ function sortItems(obj,params) {
 }
 
 var json_obj;
+var searchParams;
 
 function process() {
-	let params = new URLSearchParams(location.search.slice(1));
-	json_obj = sortItems(json_obj,params);
+	json_obj = sortItems(json_obj,searchParams);
 	var resultHTML = "";
 	resultHTML += "<table><tbody>";
 	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Shadow</td><td class='header'>Location</td><td class='header'>Date,Time</td>";
 	var month = new Date().getMonth() + 1;
 	var day = new Date().getDate();
 	for(var i = 0; i < json_obj.length; i++) {
-		if(filterItem(json_obj[i],params,month,day)) {
+		if(filterItem(json_obj[i],searchParams,month,day)) {
 			resultHTML += "<tr>" 
 				+ stringFromObject(json_obj[i])
 				+"</tr>";
@@ -126,7 +126,8 @@ function process() {
 
 function load() {
 	json_obj = JSON.parse(Get("fish.json"));
-	parse();
+	searchParams = new URLSearchParams(location.search.slice(1));
+	process();
 }
 </script>
 </head>

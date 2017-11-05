@@ -316,14 +316,15 @@
    "Rarity": 4,
    "Location": "Underground<br/>(Listen for Sound and Dig)",
    "Time": "November-May, All Day",
-   "datetime": [{"11-5": 
+   "datetime": [{"11-5": ["0-23"]}]
  },
  {
    "Name": "Walking Leaf",
    "Value": 600,
    "Rarity": 5,
    "Location": "Ground",
-   "Time": "July-September, 8AM-5PM"
+   "Time": "July-September, 8AM-5PM",
+   "datetime": [{"7-11": ["8-17"]}]
  },
  {
    "Name": "Walking Stick",
@@ -331,6 +332,7 @@
    "Rarity": 4,
    "Location": "Tree Trunk",
    "Time": "July-August, 4AM-8AM or 5PM-7PM<br/>September-November, 4AM-7PM",
+   "datetime": [{"7-8":["4-8","17-19"]},{"9-11":["4-19"]}],
    "IslandTime": "4AM-8AM or 5PM-7PM"
  },
  {
