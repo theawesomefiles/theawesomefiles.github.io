@@ -34,10 +34,10 @@ function filterItem(obj,params,month,hour) {
 		return true;
 	}
 
-	var passedDateValidation = true;
-	if(obj.datetime != null && obj.datetime != '*') {
-		if(obj.datetime == '') {
-			passedDateValidation = false;
+	var passedDateValidation = false;
+	if(obj.datetime != null) {
+		if(obj.datetime == '*') {
+			passedDateValidation = true;
 		}
 		else {
 			obj.datetime[Symbol.iterator] = iter.bind(null, obj.datetime);
@@ -54,10 +54,7 @@ function filterItem(obj,params,month,hour) {
 					}
 				}
 			
-				if(currentMonth < firstMonth || currentMonth > lastMonth) {
-					passedDateValidation = false;
-				}
-				else {
+				if(currentMonth >= firstMonth && currentMonth <= lastMonth) {
 					timeList = dateTimeEntry.value;
 					for(var i = 0; i < timeList.length; ++i) {
 						buffer = timeList[i].split('-');
@@ -72,8 +69,8 @@ function filterItem(obj,params,month,hour) {
 							}
 						}
 
-						if(currentHour < firstHour || currentHour >= lastHour) {
-							passedDateValidation = false;
+						if(currentHour >= firstHour && currentHour < lastHour) {
+							passedDateValidation = true;
 						}
 					}
 				}
@@ -81,7 +78,7 @@ function filterItem(obj,params,month,hour) {
 		}
 	}
 	
-	var passedIslandTimeValidation = true;
+	var passedIslandTimeValidation = false;
 	if(obj.islandhours != null) {
 		for(var hourEntry of obj.islandhours) {
 			var buffer = hourEntry.split('-');
@@ -96,8 +93,8 @@ function filterItem(obj,params,month,hour) {
 				}
 			}
 
-			if(currentHour < firstHour || currentHour >= lastHour) {
-				passedIslandTimeValidation = false;
+			if(currentHour >= firstHour && currentHour < lastHour) {
+				passedIslandTimeValidation = true;
 			}
 		}
 	}
@@ -146,7 +143,7 @@ function process() {
 
 	var resultHTML = "";
 	resultHTML += "<table><tbody>";
-	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Rarity</td><td class='header'>Location</td><td class='header'>Date,Time</td><td class='header'>Island Time</td>";
+	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Rarity</td><td class='header'>Location</td><td class='header'>Date,Time (" + new Date(new Date().getTime()).toLocaleTimeString() + ")</td><td class='header'>Island Time</td>";
 	var month = new Date().getMonth() + 1;
 	var hour = new Date().getHours() + 1;
 	for(var i = 0; i < json_obj.length; i++) {
