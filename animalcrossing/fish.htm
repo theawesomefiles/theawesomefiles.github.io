@@ -87,9 +87,16 @@ function filterItem(obj,params,month,day) {
 }
 
 function compareItems(x, y, sortField, sortOrder) {
-	var first = sortOrder == 'asc' ? x[sortField] : y[sortField];
-	var second = sortOrder == 'asc' ? y[sortField] : x[sortField];
-	return first < second ? -1 : (first > second ? 1 : 0);
+	var comparisonResult = x[sortField] < y[sortField] ? -1 : (x[sortField] > y[sortField] ? 1 : 0);
+	if (comparisonResult == 0) {
+		comparisonResult = x.Name < y.Name ? -1 : 1;
+	}
+
+	if(sortOrder == 'desc') {
+		comparisonResult *= -1;
+	}
+
+	return comparisonResult;
 }
 
 function sortItems(obj,params) {
