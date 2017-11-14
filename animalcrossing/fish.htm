@@ -44,6 +44,7 @@ function filterItem(obj,params,month,day) {
 
 	var passedDateValidation = true;
 	if(obj.date != null) {
+		passedDateValidation = false;
 		for(var i = 0; i < obj.date.length; i++) {
 			var dates = obj.date[i].split('-');
 			var buffer = dates[0].split('/');
@@ -59,15 +60,15 @@ function filterItem(obj,params,month,day) {
 				}
 			}
 			if(month == firstMonth) {
-				if(day < firstDay) {
-					passedDateValidation = false;
+					if(day >= firstDay) {
+					passedDateValidation = true;
 				}
 			} else if (month == lastMonth) {
-				if(day > lastDay) {
-					passedDateValidation = false;
+				if(day <= lastDay) {
+					passedDateValidation = true;
 				}
-			} else if(month < firstMonth || month > lastMonth) {
-				passedDateValidation = false;
+			} else if(month > firstMonth && month < lastMonth) {
+				passedDateValidation = true;
 			}
 		}
 	}
