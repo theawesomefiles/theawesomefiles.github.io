@@ -113,7 +113,7 @@ function sortItems(obj,params) {
 
 function navigateToParameterizedPage(){
 	var s = window.location.href.split("?")[0];
-	window.location.href = s + '?sf=' + searchParams['sf'] + '&so=' + searchParams['so'];
+	window.location.href = s + '?sf=' + searchParams['sf'] + '&so=' + searchParams['so'] + '&island=' + searchParams['island'];
 }
 
 function readParamsFromUi() {
@@ -132,6 +132,14 @@ function readParamsFromUi() {
 			break;
 		}
 	}
+	
+	radios = document.getElementsByName('island');
+	for(var i = 0; i < radios.length; ++i) {
+		if(radios[i].checked) {
+			searchParams['island'] = radios[i].value;
+			break;
+		}
+	}
 }
 
 function populateUiWithParams() {
@@ -146,6 +154,13 @@ function populateUiWithParams() {
 		radios[i].checked = false;
 	}
 	document.getElementById('sortField' + capitalizeFirstLetter(searchParams['sf'])).checked = true;
+	
+	radios = document.getElementsByName('island');
+	for(var i = 0; i < radios.length; ++i) {
+		radios[i].checked = false;
+	}
+	document.getElementById('island' + capitalizeFirstLetter(searchParams['island'])).checked = true;
+
 }
 
 var json_obj;
@@ -175,6 +190,9 @@ function loadSearchParams() {
 			searchParams['so'] = 'asc';
 		}
 	}
+	if(searchParams['island'] == null) {
+		searchParams['island'] = 'true';
+	}
 }
 
 function buildOptions(resultHTML) {
@@ -186,7 +204,11 @@ function buildOptions(resultHTML) {
 	resultHTML += "<tr><td>Order</td>";
 	resultHTML += "<td><input type='radio' name='sortOrder' value='asc' id='sortOrderAsc' onclick='process()'/><label for='sortOrderAsc'>Asc</label></td>";
 	resultHTML += "<td><input type='radio' name='sortOrder' value='desc' id='sortOrderDesc' onclick='process()'/><label for='sortOrderDesc'>Desc</label></td></tr>";
-	resultHTML += "<tr><td><button class='borderless' onclick='toggleOptionsPanel()'>&#8607;</button></td><td/><td><button class='borderless right' onclick='navigateToParameterizedPage()'>&#9741;</button></td></tr></tbody></table></div>";
+	resultHTML += "<tr><td>Island Fish?</td>";
+	resultHTML += "<td><input type='radio' name='island' value='true' id='islandTrue' onclick='process()'/><label for='islandTrue'>True</label></td>";
+	resultHTML += "<td><input type='radio' name='island' value='only' id='islandOnly' onclick='process()'/><label for='islandOnly'>Only</label></td>";
+	resultHTML += "<td><input type='radio' name='island' value='false' id='islandFalse' onclick='process()'/><label for='islandFalse'>False</label></td></tr>";
+	resultHTML += "<tr><td><button class='borderless' onclick='toggleOptionsPanel()'>&#8607;</button></td><td/><td/><td><button class='borderless right' onclick='navigateToParameterizedPage()'>&#9741;</button></td></tr></tbody></table></div>";
 	return resultHTML;
 }
 
