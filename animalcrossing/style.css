@@ -16,7 +16,6 @@ button.borderless {
      border:none; 
      padding:0!important;
      font: inherit;
-     /*border is optional*/
      cursor: pointer;
 }
 

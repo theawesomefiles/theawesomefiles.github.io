@@ -175,8 +175,14 @@ function process() {
 function loadSearchParams() {
 	var urlParams = new URLSearchParams(location.search.slice(1));
 	searchParams = {};
+	var anyIncluded = false;
 	for(var searchKey of urlParams) {
+		anyIncluded = true;
 		searchParams[searchKey[0]] = searchKey[1];
+	}
+
+	if(!anyIncluded) {
+		toggleOptionsPanel();
 	}
 
 	if(searchParams['sf'] == null) {
@@ -232,8 +238,8 @@ function buildTable(resultHTML) {
 
 function load() {
 	json_obj = JSON.parse(Get("fish.json"));
-	loadSearchParams();
 	document.getElementById('options').innerHTML = buildOptions('');
+	loadSearchParams();
 	populateUiWithParams();
 	process();
 }
