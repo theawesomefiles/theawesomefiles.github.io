@@ -20,6 +20,10 @@ function readCookie(name) {
 	return null;
 }
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 function Get(yourUrl){
     var Httpreq = new XMLHttpRequest(); // a new request
     Httpreq.open("GET",yourUrl,false);
@@ -53,6 +57,7 @@ function filterItem(obj,params,month,day) {
 			buffer = dates[1].split('/');
 			var lastMonth = parseInt(buffer[0]);
 			var lastDay = parseInt(buffer[1]);
+
 			if(lastMonth < firstMonth) {
 				lastMonth += 12;
 				if(month < firstMonth) {
@@ -102,27 +107,93 @@ function compareItems(x, y, sortField, sortOrder) {
 function sortItems(obj,params) {
 	var sortField = params['sf'];
 	var sortOrder = params['so'];
-	if(sortField == null) {
-		sortField = 'Value';
-	}
-	if(sortOrder == null) {
-		if(sortField == 'Value') {
-			sortOrder = 'desc';
-		} else {
-			sortOrder = 'asc';
+	obj.sort((x, y) => compareItems(x, y, params['sf'], params['so']));
+	return obj;
+}
+
+function navigateToParameterizedPage(){
+	var s = window.location.href.split("?")[0];
+	window.location.href = s + '?sf=' + searchParams['sf'] + '&so=' + searchParams['so'];
+}
+
+function readParamsFromUi() {
+	var radios = document.getElementsByName('sortOrder');
+	for(var i = 0; i < radios.length; ++i) {
+		if(radios[i].checked) {
+			searchParams['so'] = radios[i].value;
+			break;
 		}
 	}
-	obj.sort((x, y) => compareItems(x, y, sortField, sortOrder));
-	return obj;
+	
+	radios = document.getElementsByName('sortField');
+	for(var i = 0; i < radios.length; ++i) {
+		if(radios[i].checked) {
+			searchParams['sf'] = radios[i].value;
+			break;
+		}
+	}
+}
+
+function populateUiWithParams() {
+	var radios = document.getElementsByName('sortOrder');
+	for(var i = 0; i < radios.length; ++i) {
+		radios[i].checked = false;
+	}
+	document.getElementById('sortOrder' + capitalizeFirstLetter(searchParams['so'])).checked = true;
+	
+	radios = document.getElementsByName('sortField');
+	for(var i = 0; i < radios.length; ++i) {
+		radios[i].checked = false;
+	}
+	document.getElementById('sortField' + capitalizeFirstLetter(searchParams['sf'])).checked = true;
 }
 
 var json_obj;
 var searchParams;
 
 function process() {
+	readParamsFromUi();
 	json_obj = sortItems(json_obj,searchParams);
-	var resultHTML = "";
+	document.getElementById('results').innerHTML = buildTable('');
+}
+
+function loadSearchParams() {
+	var urlParams = new URLSearchParams(location.search.slice(1));
+	searchParams = {};
+	for(var searchKey of urlParams) {
+		searchParams[searchKey[0]] = searchKey[1];
+	}
+
+	if(searchParams['sf'] == null) {
+		searchParams['sf'] = 'Value';
+	}
+	if(searchParams['so'] == null) {
+		if(searchParams['sf'] == 'Value') {
+			searchParams['so'] = 'desc';
+		}
+		else {
+			searchParams['so'] = 'asc';
+		}
+	}
+}
+
+function buildOptions(resultHTML) {
+	resultHTML += "<div class='optionPanel'><button class='borderless' onclick='toggleOptionsPanel()'>&#8609;</button></div>";
+	resultHTML += "<div class='optionPanel closed'><table><tbody>"
+	resultHTML += "<tr><td>Sort By</td>";
+	resultHTML += "<td><input type='radio' name='sortField' value='Value' id='sortFieldValue' onclick='process()'/><label for='sortFieldValue'>Value</label></td>";
+	resultHTML += "<td><input type='radio' name='sortField' value='Name' id='sortFieldName' onclick='process()'/><label for='sortFieldName'>Name</label></td></tr>";
+	resultHTML += "<tr><td>Order</td>";
+	resultHTML += "<td><input type='radio' name='sortOrder' value='asc' id='sortOrderAsc' onclick='process()'/><label for='sortOrderAsc'>Asc</label></td>";
+	resultHTML += "<td><input type='radio' name='sortOrder' value='desc' id='sortOrderDesc' onclick='process()'/><label for='sortOrderDesc'>Desc</label></td></tr>";
+	resultHTML += "<tr><td><button class='borderless' onclick='toggleOptionsPanel()'>&#8607;</button></td><td/><td><button class='borderless right' onclick='navigateToParameterizedPage()'>&#9741;</button></td></tr></tbody></table></div>";
+	return resultHTML;
+}
+
+function buildTable(resultHTML) {
 	resultHTML += "<table><tbody>";
+	var month = new Date().getMonth() + 1;
+	var day = new Date().getDate();
 	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Shadow</td><td class='header'>Location</td><td class='header'>Date,Time</td>";
 	var month = new Date().getMonth() + 1;
 	var day = new Date().getDate();
@@ -134,21 +205,27 @@ function process() {
 		}
 	}
 	resultHTML += "</tbody></table>";
-	document.getElementById('results').innerHTML = resultHTML;
+	return resultHTML;
 }
 
 function load() {
 	json_obj = JSON.parse(Get("fish.json"));
-	var urlParams = new URLSearchParams(location.search.slice(1));
-	searchParams = {};
-	for(var searchKey of urlParams) {
-		searchParams[searchKey[0]] = searchKey[1];
-	}
+	loadSearchParams();
+	document.getElementById('options').innerHTML = buildOptions('');
+	populateUiWithParams();
 	process();
+}
+
+function toggleOptionsPanel() {
+	var elements = document.getElementsByClassName('optionPanel');
+	for(var i = 0; i < elements.length; ++i) {
+		elements[i].classList.toggle('closed');
+	}
 }
 </script>
 </head>
 <body onload="load()">
-<div id="results" />
+<div id="options"></div>
+<div id="results"></div>
 </body>
 </html>

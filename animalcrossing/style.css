@@ -1,7 +1,27 @@
-tr:nth-child(even) {
+#results tr:nth-child(even) {
     background-color: #dddddd;
 }
 
 td.header {
 	font-weight: bold;
+}
+
+div.closed {
+	display: none;
+}
+
+button.borderless {
+     background:none!important;
+     color:inherit;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     border-bottom:1px solid #444; 
+     cursor: pointer;
+}
+
+.right {
+	float:right;
+	clear:right;
 }
