@@ -152,7 +152,7 @@ function process() {
 	resultHTML += "<table><tbody>";
 	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Rarity</td><td class='header'>Location</td><td class='header'>Date,Time (" + new Date(new Date().getTime()).toLocaleTimeString() + ")</td><td class='header'>Island Time</td>";
 	var month = new Date().getMonth() + 1;
-	var hour = new Date().getHours() + 1;
+	var hour = new Date().getHours();
 	for(var i = 0; i < json_obj.length; i++) {
 		var dataObj = json_obj[i];
 		if(filterItem(dataObj,searchParams,month,hour)) {
