@@ -196,7 +196,7 @@ function loadSearchParams() {
 }
 
 function buildOptions(resultHTML) {
-	resultHTML += "<div class='optionPanel'><button class='borderless' onclick='toggleOptionsPanel()'>&#8609;</button></div>";
+	resultHTML += "<div class='optionPanel'><button class='borderless' onclick='toggleOptionsPanel()'>&#9776;</button></div>";
 	resultHTML += "<div class='optionPanel closed'><table><tbody>"
 	resultHTML += "<tr><td>Sort By</td>";
 	resultHTML += "<td><input type='radio' name='sortField' value='Value' id='sortFieldValue' onclick='process()'/><label for='sortFieldValue'>Value</label></td>";
@@ -208,7 +208,7 @@ function buildOptions(resultHTML) {
 	resultHTML += "<td><input type='radio' name='island' value='true' id='islandTrue' onclick='process()'/><label for='islandTrue'>True</label></td>";
 	resultHTML += "<td><input type='radio' name='island' value='only' id='islandOnly' onclick='process()'/><label for='islandOnly'>Only</label></td>";
 	resultHTML += "<td><input type='radio' name='island' value='false' id='islandFalse' onclick='process()'/><label for='islandFalse'>False</label></td></tr>";
-	resultHTML += "<tr><td><button class='borderless' onclick='toggleOptionsPanel()'>&#8607;</button></td><td/><td/><td><button class='borderless right' onclick='navigateToParameterizedPage()'>&#9741;</button></td></tr></tbody></table></div>";
+	resultHTML += "<tr><td><button class='borderless' onclick='toggleOptionsPanel()'>&#9776;</button></td><td/><td/><td><button class='borderless right' onclick='navigateToParameterizedPage()'>&#9741;</button></td></tr></tbody></table></div>";
 	return resultHTML;
 }
 
