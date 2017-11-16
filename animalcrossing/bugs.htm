@@ -9,6 +9,10 @@ function Get(yourUrl){
     return Httpreq.responseText;          
 }
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 function stringFromObject(obj) {
 	var ret = "";
 	for(var property in obj) {
@@ -142,27 +146,95 @@ function sortItems(obj,params) {
 	return obj;
 }
 
-var json_obj;
-var searchParams;
+function navigateToParameterizedPage(){
+	var s = window.location.href.split("?")[0];
+	window.location.href = s + '?sf=' + searchParams['sf'] + '&so=' + searchParams['so'] + '&island=' + searchParams['island'];
+}
 
-function process() {
-	json_obj = sortItems(json_obj,searchParams);
+function readParamsFromUi() {
+	var radios = document.getElementsByName('sortOrder');
+	for(var i = 0; i < radios.length; ++i) {
+		if(radios[i].checked) {
+			searchParams['so'] = radios[i].value;
+			break;
+		}
+	}
+	
+	radios = document.getElementsByName('sortField');
+	for(var i = 0; i < radios.length; ++i) {
+		if(radios[i].checked) {
+			searchParams['sf'] = radios[i].value;
+			break;
+		}
+	}
+	
+	radios = document.getElementsByName('island');
+	for(var i = 0; i < radios.length; ++i) {
+		if(radios[i].checked) {
+			searchParams['island'] = radios[i].value;
+			break;
+		}
+	}
+}
 
-	var resultHTML = "";
+function populateUiWithParams() {
+	var radios = document.getElementsByName('sortOrder');
+	for(var i = 0; i < radios.length; ++i) {
+		radios[i].checked = false;
+	}
+	document.getElementById('sortOrder' + capitalizeFirstLetter(searchParams['so'])).checked = true;
+	
+	radios = document.getElementsByName('sortField');
+	for(var i = 0; i < radios.length; ++i) {
+		radios[i].checked = false;
+	}
+	document.getElementById('sortField' + capitalizeFirstLetter(searchParams['sf'])).checked = true;
+	
+	radios = document.getElementsByName('island');
+	for(var i = 0; i < radios.length; ++i) {
+		radios[i].checked = false;
+	}
+	document.getElementById('island' + capitalizeFirstLetter(searchParams['island'])).checked = true;
+}
+
+
+function buildOptions(resultHTML) {
+	resultHTML += "<div class='optionPanel'><button class='borderless' onclick='toggleOptionsPanel()'>&#9776;</button></div>";
+	resultHTML += "<div class='optionPanel closed'><table><tbody>"
+	resultHTML += "<tr><td>Sort By</td>";
+	resultHTML += "<td><input type='radio' name='sortField' value='Value' id='sortFieldValue' onclick='process()'/><label for='sortFieldValue'>Value</label></td>";
+	resultHTML += "<td><input type='radio' name='sortField' value='Name' id='sortFieldName' onclick='process()'/><label for='sortFieldName'>Name</label></td></tr>";
+	resultHTML += "<tr><td>Order</td>";
+	resultHTML += "<td><input type='radio' name='sortOrder' value='asc' id='sortOrderAsc' onclick='process()'/><label for='sortOrderAsc'>Asc</label></td>";
+	resultHTML += "<td><input type='radio' name='sortOrder' value='desc' id='sortOrderDesc' onclick='process()'/><label for='sortOrderDesc'>Desc</label></td></tr>";
+	resultHTML += "<tr><td>Island Bugs?</td>";
+	resultHTML += "<td><input type='radio' name='island' value='true' id='islandTrue' onclick='process()'/><label for='islandTrue'>True</label></td>";
+	resultHTML += "<td><input type='radio' name='island' value='only' id='islandOnly' onclick='process()'/><label for='islandOnly'>Only</label></td>";
+	resultHTML += "<td><input type='radio' name='island' value='false' id='islandFalse' onclick='process()'/><label for='islandFalse'>False</label></td></tr>";
+	resultHTML += "<tr><td><button class='borderless' onclick='toggleOptionsPanel()'>&#9776;</button></td><td/><td/><td><button class='borderless right' onclick='navigateToParameterizedPage()'>&#9741;</button></td></tr></tbody></table></div>";
+	return resultHTML;
+}
+
+function buildTable(resultHTML) {
 	resultHTML += "<table><tbody>";
-	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Rarity</td><td class='header'>Location</td><td class='header'>Date,Time (" + new Date(new Date().getTime()).toLocaleTimeString() + ")</td><td class='header'>Island Time</td>";
 	var month = new Date().getMonth() + 1;
 	var hour = new Date().getHours();
+	resultHTML += "<tr><td class='header'>Name</td><td class='header'>Value</td><td class='header'>Rarity</td><td class='header'>Location</td><td class='header'>Date,Time (" + new Date(new Date().getTime()).toLocaleTimeString() + ")</td><td class='header'>Island Time</td>";
 	for(var i = 0; i < json_obj.length; i++) {
-		var dataObj = json_obj[i];
-		if(filterItem(dataObj,searchParams,month,hour)) {
+		if(filterItem(json_obj[i],searchParams,month,hour)) {
 			resultHTML += "<tr>" 
-				+ stringFromObject(dataObj)
+				+ stringFromObject(json_obj[i])
 				+"</tr>";
 		}
 	}
 	resultHTML += "</tbody></table>";
-	document.getElementById('results').innerHTML = resultHTML;
+	return resultHTML;
+}
+
+var json_obj;
+var searchParams;
+
+function reloadProcess() {
 	var interval = (5 - new Date().getSeconds() % 5) * 1000 + new Date().getMilliseconds();
 	if(interval > 5000) {
 		interval = 5000;
@@ -170,18 +242,62 @@ function process() {
 	setTimeout(process, interval);
 }
 
-function load() {
-	json_obj = JSON.parse(Get("bugs.json"));
+function process() {
+	readParamsFromUi();
+	json_obj = sortItems(json_obj,searchParams);
+	document.getElementById('results').innerHTML = buildTable('');
+	reloadProcess();
+}
+
+
+function loadSearchParams() {
 	var urlParams = new URLSearchParams(location.search.slice(1));
 	searchParams = {};
+	var anyIncluded = false;
 	for(var searchKey of urlParams) {
+		anyIncluded = true;
 		searchParams[searchKey[0]] = searchKey[1];
 	}
+
+	if(!anyIncluded) {
+		toggleOptionsPanel();
+	}
+
+	if(searchParams['sf'] == null) {
+		searchParams['sf'] = 'Value';
+	}
+	if(searchParams['so'] == null) {
+		if(searchParams['sf'] == 'Value') {
+			searchParams['so'] = 'desc';
+		}
+		else {
+			searchParams['so'] = 'asc';
+		}
+	}
+	if(searchParams['island'] == null) {
+		searchParams['island'] = 'true';
+	}
+}
+
+
+function load() {
+	json_obj = JSON.parse(Get("bugs.json"));
+	document.getElementById('options').innerHTML = buildOptions('');
+	loadSearchParams();
+	populateUiWithParams();
 	process();
+}
+
+function toggleOptionsPanel() {
+	var elements = document.getElementsByClassName('optionPanel');
+	for(var i = 0; i < elements.length; ++i) {
+		elements[i].classList.toggle('closed');
+	}
 }
 </script>
 </head>
 <body onload="load()">
-<div id="results" />
+<div id="options"></div>
+<div id="results"></div>
 </body>
 </html>
