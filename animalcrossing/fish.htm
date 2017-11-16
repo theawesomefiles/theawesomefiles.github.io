@@ -84,7 +84,7 @@ function filterItem(obj,params,month,day) {
 			return false;
 		}
 	} else if (showIsland == 'false') {
-		if(obj.Location.includes('Island') && !passedDateValidation) {
+		if(obj.Location == 'Island' || (obj.Location.includes('Island') && !passedDateValidation)) {
 			return false;
 		}
 	}
@@ -210,10 +210,10 @@ function buildOptions(resultHTML) {
 	resultHTML += "<tr><td>Order</td>";
 	resultHTML += "<td><input type='radio' name='sortOrder' value='asc' id='sortOrderAsc' onclick='process()'/><label for='sortOrderAsc'>Asc</label></td>";
 	resultHTML += "<td><input type='radio' name='sortOrder' value='desc' id='sortOrderDesc' onclick='process()'/><label for='sortOrderDesc'>Desc</label></td></tr>";
-	resultHTML += "<tr><td>Island Fish?</td>";
-	resultHTML += "<td><input type='radio' name='island' value='true' id='islandTrue' onclick='process()'/><label for='islandTrue'>True</label></td>";
-	resultHTML += "<td><input type='radio' name='island' value='only' id='islandOnly' onclick='process()'/><label for='islandOnly'>Only</label></td>";
-	resultHTML += "<td><input type='radio' name='island' value='false' id='islandFalse' onclick='process()'/><label for='islandFalse'>False</label></td></tr>";
+	resultHTML += "<tr><td>Land Mass</td>";
+	resultHTML += "<td><input type='radio' name='island' value='false' id='islandFalse' onclick='process()'/><label for='islandFalse'>Mainland</label></td>";
+	resultHTML += "<td><input type='radio' name='island' value='only' id='islandOnly' onclick='process()'/><label for='islandOnly'>Island</label></td>";
+	resultHTML += "<td><input type='radio' name='island' value='true' id='islandTrue' onclick='process()'/><label for='islandTrue'>Both</label></td></tr>";
 	resultHTML += "<tr><td><button class='borderless' onclick='toggleOptionsPanel()'>&#9776;</button></td><td/><td/><td><button class='borderless right' onclick='navigateToParameterizedPage()'>&#9741;</button></td></tr></tbody></table></div>";
 	return resultHTML;
 }
