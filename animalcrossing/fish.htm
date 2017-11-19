@@ -24,6 +24,22 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+Date.prototype.isLeapYear = function() {
+    var year = this.getFullYear();
+    if((year & 3) != 0) return false;
+    return ((year % 100) != 0 || (year % 400) == 0);
+};
+
+// Get Day of Year
+Date.prototype.getDayOfYear = function() {
+    var dayCount = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+    var mn = this.getMonth();
+    var dn = this.getDate();
+    var dayOfYear = dayCount[mn] + dn;
+    if(mn > 1 && this.isLeapYear()) dayOfYear++;
+    return dayOfYear;
+};
+
 function Get(yourUrl){
     var Httpreq = new XMLHttpRequest(); // a new request
     Httpreq.open("GET",yourUrl,false);
@@ -78,6 +94,18 @@ function filterItem(obj,params,month,day) {
 		}
 	}
 
+	var passedLocationValidation = true;
+	var location = params['location'];
+	if(location == 'river') {
+		if(!obj.Location.includes('River') && !obj.Location.includes('Waterfall')) {
+			passedLocationValidation = false;
+		}
+	} else if (location == 'ocean') {
+		if(!obj.Location.includes('Ocean') && !obj.Location.includes('Island')) {
+			passedLocationValidation = false;
+		}
+	}
+
 	var showIsland = params['island'];
 	if(showIsland == 'only') {
 		if(!obj.Location.includes('Island')) {
@@ -88,7 +116,8 @@ function filterItem(obj,params,month,day) {
 			return false;
 		}
 	}
-	return obj.Location.includes('Island') || passedDateValidation;
+	
+	return (obj.Location.includes('Island') || passedDateValidation) && passedLocationValidation;
 }
 
 function compareItems(x, y, sortField, sortOrder) {
@@ -105,30 +134,28 @@ function compareItems(x, y, sortField, sortOrder) {
 }
 
 function sortItems(obj,params) {
-	var sortField = params['sf'];
-	var sortOrder = params['so'];
 	obj.sort((x, y) => compareItems(x, y, params['sf'], params['so']));
 	return obj;
 }
 
 function navigateToParameterizedPage(){
 	var s = window.location.href.split("?")[0];
-	window.location.href = s + '?sf=' + searchParams['sf'] + '&so=' + searchParams['so'] + '&island=' + searchParams['island'];
+	window.location.href = s + '?sf=' + searchParams['sf'] + '&location=' + searchParams['location'] + '&island=' + searchParams['island'];
 }
 
 function readParamsFromUi() {
-	var radios = document.getElementsByName('sortOrder');
-	for(var i = 0; i < radios.length; ++i) {
-		if(radios[i].checked) {
-			searchParams['so'] = radios[i].value;
-			break;
-		}
-	}
-	
-	radios = document.getElementsByName('sortField');
+	var radios = document.getElementsByName('sortField');
 	for(var i = 0; i < radios.length; ++i) {
 		if(radios[i].checked) {
 			searchParams['sf'] = radios[i].value;
+			break;
+		}
+	}
+
+	radios = document.getElementsByName('location');
+	for(var i = 0; i < radios.length; ++i) {
+		if(radios[i].checked) {
+			searchParams['location'] = radios[i].value;
 			break;
 		}
 	}
@@ -140,20 +167,24 @@ function readParamsFromUi() {
 			break;
 		}
 	}
+
+	searchParams['so'] = null;
+
+	handleEmptyParams();
 }
 
 function populateUiWithParams() {
-	var radios = document.getElementsByName('sortOrder');
-	for(var i = 0; i < radios.length; ++i) {
-		radios[i].checked = false;
-	}
-	document.getElementById('sortOrder' + capitalizeFirstLetter(searchParams['so'])).checked = true;
-	
-	radios = document.getElementsByName('sortField');
+	var radios = document.getElementsByName('sortField');
 	for(var i = 0; i < radios.length; ++i) {
 		radios[i].checked = false;
 	}
 	document.getElementById('sortField' + capitalizeFirstLetter(searchParams['sf'])).checked = true;
+	
+	radios = document.getElementsByName('location');
+	for(var i = 0; i < radios.length; ++i) {
+		radios[i].checked = false;
+	}
+	document.getElementById('location' + capitalizeFirstLetter(searchParams['location'])).checked = true;
 	
 	radios = document.getElementsByName('island');
 	for(var i = 0; i < radios.length; ++i) {
@@ -163,28 +194,27 @@ function populateUiWithParams() {
 
 }
 
+function processItems(items) {
+	for(var i = 0; i < items.length; i++) {
+		var obj = items[i];
+		
+		if(obj.date == null) {
+			
+		}
+	}
+}
+
 var json_obj;
 var searchParams;
 
 function process() {
 	readParamsFromUi();
+	//processItems(json_obj);
 	json_obj = sortItems(json_obj,searchParams);
 	document.getElementById('results').innerHTML = buildTable('');
 }
 
-function loadSearchParams() {
-	var urlParams = new URLSearchParams(location.search.slice(1));
-	searchParams = {};
-	var anyIncluded = false;
-	for(var searchKey of urlParams) {
-		anyIncluded = true;
-		searchParams[searchKey[0]] = searchKey[1];
-	}
-
-	if(!anyIncluded) {
-		toggleOptionsPanel();
-	}
-
+function handleEmptyParams() {
 	if(searchParams['sf'] == null) {
 		searchParams['sf'] = 'Value';
 	}
@@ -199,21 +229,45 @@ function loadSearchParams() {
 	if(searchParams['island'] == null) {
 		searchParams['island'] = 'true';
 	}
+	if(searchParams['location'] == null) {
+		searchParams['location'] = 'both';
+	}
+}
+
+function loadSearchParams() {
+	var urlParams = new URLSearchParams(location.search.slice(1));
+	searchParams = {};
+	var anyIncluded = false;
+	for(var searchKey of urlParams) {
+		anyIncluded = true;
+		searchParams[searchKey[0]] = searchKey[1];
+	}
+
+	if(!anyIncluded) {
+		toggleOptionsPanel();
+	}
+	handleEmptyParams();
 }
 
 function buildOptions(resultHTML) {
 	resultHTML += "<div class='optionPanel'><button class='borderless' onclick='toggleOptionsPanel()'>&#9776;</button></div>";
+
 	resultHTML += "<div class='optionPanel closed'><table><tbody>"
+
 	resultHTML += "<tr><td>Sort By</td>";
 	resultHTML += "<td><input type='radio' name='sortField' value='Value' id='sortFieldValue' onclick='process()'/><label for='sortFieldValue'>Value</label></td>";
 	resultHTML += "<td><input type='radio' name='sortField' value='Name' id='sortFieldName' onclick='process()'/><label for='sortFieldName'>Name</label></td></tr>";
-	resultHTML += "<tr><td>Order</td>";
-	resultHTML += "<td><input type='radio' name='sortOrder' value='asc' id='sortOrderAsc' onclick='process()'/><label for='sortOrderAsc'>Asc</label></td>";
-	resultHTML += "<td><input type='radio' name='sortOrder' value='desc' id='sortOrderDesc' onclick='process()'/><label for='sortOrderDesc'>Desc</label></td></tr>";
+
+	resultHTML += "<tr><td>Location</td>";
+	resultHTML += "<td><input type='radio' name='location' value='river' id='locationRiver' onclick='process()'/><label for='locationRiver'>River</label></td>";
+	resultHTML += "<td><input type='radio' name='location' value='ocean' id='locationOcean' onclick='process()'/><label for='locationOcean'>Ocean</label></td>";
+	resultHTML += "<td><input type='radio' name='location' value='both' id='locationBoth' onclick='process()'/><label for='locationBoth'>Both</label></td></tr>";
+
 	resultHTML += "<tr><td>Land Mass</td>";
 	resultHTML += "<td><input type='radio' name='island' value='false' id='islandFalse' onclick='process()'/><label for='islandFalse'>Mainland</label></td>";
 	resultHTML += "<td><input type='radio' name='island' value='only' id='islandOnly' onclick='process()'/><label for='islandOnly'>Island</label></td>";
 	resultHTML += "<td><input type='radio' name='island' value='true' id='islandTrue' onclick='process()'/><label for='islandTrue'>Both</label></td></tr>";
+
 	resultHTML += "<tr><td><button class='borderless' onclick='toggleOptionsPanel()'>&#9776;</button></td><td/><td/><td><button class='borderless right' onclick='navigateToParameterizedPage()'>&#9741;</button></td></tr></tbody></table></div>";
 	return resultHTML;
 }
