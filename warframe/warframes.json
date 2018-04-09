@@ -1,0 +1,1375 @@
+{
+  "Warframes": {
+    "Ash Prime": {
+      "Sprint": 1.2,
+      "SystemCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Control Module",
+            "Count": 3
+          },
+          {
+            "Type": "Resource",
+            "Name": "Orokin Cell",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Ferrite",
+            "Count": 1000
+          },
+          {
+            "Type": "Resource",
+            "Name": "Circuits",
+            "Count": 500
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "ChassisCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Gallium",
+            "Count": 3
+          },
+          {
+            "Type": "Resource",
+            "Name": "Nano Spores",
+            "Count": 1000
+          },
+          {
+            "Type": "Resource",
+            "Name": "Rubedo",
+            "Count": 400
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "Conclave": true,
+      "Shield": 125,
+      "NeuroCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Alloy Plate",
+            "Count": 150
+          },
+          {
+            "Type": "Resource",
+            "Name": "Neural Sensors",
+            "Count": 2
+          },
+          {
+            "Type": "Resource",
+            "Name": "Slavage",
+            "Count": 1000
+          },
+          {
+            "Type": "Resource",
+            "Name": "Rubedo",
+            "Count": 750
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "Image": "AshPrimeNewLook.png",
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 150,
+      "Introduced": "16.11",
+      "Armor": 150,
+      "Name": "Ash Prime",
+      "Energy": 100,
+      "MainCost": {
+        "Parts": [
+          {
+            "Type": "Item",
+            "Name": "Prime Neuroptics",
+            "Count": 1
+          },
+          {
+            "Type": "Item",
+            "Name": "Prime Chassis",
+            "Count": 1
+          },
+          {
+            "Type": "Item",
+            "Name": "Prime Systems",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Orokin Cell",
+            "Count": 1
+          }
+        ],
+        "Rush": 50,
+        "Time": 72,
+        "Credits": 25000
+      }
+    },
+    "Saryn": {
+      "Sprint": 0.95,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Polarities": [
+        "Bar",
+        "D"
+      ],
+      "AuraPolarity": "D",
+      "Health": 125,
+      "Introduced": "7",
+      "Armor": 175,
+      "Name": "Saryn",
+      "Energy": 150,
+      "Image": "SarynNewLook.png"
+    },
+    "Ivara": {
+      "Sprint": 1.15,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Polarities": [
+        "D",
+        "Bar"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 75,
+      "Introduced": "18",
+      "Armor": 65,
+      "Name": "Ivara",
+      "Energy": 175,
+      "Image": "IvaraNewLook.png"
+    },
+    "Inaros": {
+      "Sprint": 1,
+      "HealthRank30": 2200,
+      "Conclave": true,
+      "Shield": 0,
+      "ExilusPolarity": "Bar",
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "D"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 550,
+      "Introduced": "18.5",
+      "Armor": 200,
+      "Name": "Inaros",
+      "Energy": 100,
+      "Image": "InarosNewLook.png"
+    },
+    "Hydroid Prime": {
+      "Sprint": 1.05,
+      "Conclave": true,
+      "Shield": 175,
+      "Sex": "Male",
+      "Name": "Hydroid Prime",
+      "Polarities": [
+        "V",
+        "D",
+        "Bar",
+        "Bar"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "21.6",
+      "Armor": 250,
+      "Mastery": 5,
+      "Energy": 150,
+      "Image": "HydroidPrimeBust.png"
+    },
+    "Gara": {
+      "Sprint": 1.15,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "D",
+      "Health": 100,
+      "Introduced": "22",
+      "Armor": 125,
+      "Name": "Gara",
+      "Energy": 150,
+      "Image": "GaraNewLook.png"
+    },
+    "Rhino Prime": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "D",
+        "Bar"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "12.4",
+      "Armor": 275,
+      "Name": "Rhino Prime",
+      "Energy": 100,
+      "Image": "RhinoPrimeNewLook.png"
+    },
+    "Nekros": {
+      "Sprint": 1.1,
+      "Conclave": true,
+      "Shield": 90,
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "V"
+      ],
+      "AuraPolarity": "None",
+      "Health": 100,
+      "Introduced": "10",
+      "Armor": 65,
+      "Name": "Nekros",
+      "Energy": 100,
+      "Image": "NekrosNewLook.png"
+    },
+    "Loki": {
+      "Sprint": 1.25,
+      "Conclave": true,
+      "Shield": 75,
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "V"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 75,
+      "Introduced": "Vanilla",
+      "Armor": 65,
+      "Name": "Loki",
+      "Energy": 150,
+      "Image": "LokiNewLook.png"
+    },
+    "Wukong": {
+      "Sprint": 0.95,
+      "Conclave": true,
+      "Shield": 125,
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "D"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "17.12",
+      "Armor": 225,
+      "Name": "Wukong",
+      "Energy": 100,
+      "Image": "WukongNewIcon.png"
+    },
+    "Limbo": {
+      "Sprint": 1.15,
+      "Conclave": true,
+      "Shield": 75,
+      "Sex": "Male",
+      "Polarities": [
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "15",
+      "Armor": 65,
+      "Name": "Limbo",
+      "Energy": 150,
+      "Image": "LimboNewLook.png"
+    },
+    "Mirage": {
+      "Sprint": 1.2,
+      "Conclave": true,
+      "Shield": 80,
+      "Sex": "Female",
+      "Polarities": [
+        "D",
+        "V"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 80,
+      "Introduced": "14",
+      "Armor": 65,
+      "Name": "Mirage",
+      "Energy": 150,
+      "Image": "MirageNewLook.png"
+    },
+    "Atlas": {
+      "Sprint": 0.9,
+      "SystemCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Ferrite",
+            "Count": 4600
+          },
+          {
+            "Type": "Resource",
+            "Name": "Polymer Bundle",
+            "Count": 1700
+          },
+          {
+            "Type": "Resource",
+            "Name": "Morphics",
+            "Count": 5
+          },
+          {
+            "Type": "Resource",
+            "Name": "Orokin Cell",
+            "Count": 1
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "ChassisCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Nano Spores",
+            "Count": 1800
+          },
+          {
+            "Type": "Resource",
+            "Name": "Cryotic",
+            "Count": 1300
+          },
+          {
+            "Type": "Resource",
+            "Name": "Rubedo",
+            "Count": 700
+          },
+          {
+            "Type": "Resource",
+            "Name": "Argon Crystal",
+            "Count": 2
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "Conclave": true,
+      "Shield": 100,
+      "NeuroCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Polymer Bundle",
+            "Count": 1400
+          },
+          {
+            "Type": "Resource",
+            "Name": "Alloy Plate",
+            "Count": 1100
+          },
+          {
+            "Type": "Resource",
+            "Name": "Circuits",
+            "Count": 800
+          },
+          {
+            "Type": "Resource",
+            "Name": "Neurodes",
+            "Count": 5
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "Image": "AtlasNewLook.png",
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "D",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "17.5",
+      "Armor": 450,
+      "Name": "Atlas",
+      "Energy": 150,
+      "MainCost": {
+        "MarketCost": 275,
+        "Time": 72,
+        "Parts": [
+          {
+            "Type": "Item",
+            "Name": "Neuroptics",
+            "Count": 1
+          },
+          {
+            "Type": "Item",
+            "Name": "Chassis",
+            "Count": 1
+          },
+          {
+            "Type": "Item",
+            "Name": "Systems",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Orokin Cell",
+            "Count": 1
+          }
+        ],
+        "Rush": 50,
+        "Credits": 30000
+      }
+    },
+    "Ember Prime": {
+      "Sprint": 1.1,
+      "Conclave": true,
+      "Shield": 125,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "D"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "11",
+      "Armor": 125,
+      "Name": "Ember Prime",
+      "Energy": 150,
+      "Image": "EmberPrimeNewLook.png"
+    },
+    "Mag": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Female",
+      "Polarities": [
+        "Bar",
+        "Bar"
+      ],
+      "AuraPolarity": "V",
+      "Health": 75,
+      "Introduced": "Vanilla",
+      "Armor": 65,
+      "Name": "Mag",
+      "Energy": 125,
+      "Image": "MagNewLook.png"
+    },
+    "Hydroid": {
+      "Sprint": 1.05,
+      "Conclave": true,
+      "Shield": 125,
+      "Sex": "Male",
+      "Polarities": [
+        "V",
+        "Bar"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "13",
+      "Armor": 200,
+      "Name": "Hydroid",
+      "Energy": 125,
+      "Image": "HydroidNewLook.png"
+    },
+    "Nyx": {
+      "Sprint": 1.1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "Bar"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "6",
+      "Armor": 15,
+      "Name": "Nyx",
+      "Energy": 150,
+      "Image": "NyxNewLook.png"
+    },
+    "Valkyr Prime": {
+      "Sprint": 1.1,
+      "Conclave": true,
+      "Shield": 50,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "19.0.7",
+      "Armor": 700,
+      "Name": "Valkyr Prime",
+      "Energy": 150,
+      "Image": "ValkyrPrimeProfilePicture.png"
+    },
+    "Chroma": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "16",
+      "Armor": 350,
+      "Name": "Chroma",
+      "Energy": 150,
+      "Image": "ChromaNewLook.png"
+    },
+    "Excalibur": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "V"
+      ],
+      "AuraPolarity": "None",
+      "Health": 100,
+      "Introduced": "Vanilla",
+      "Armor": 225,
+      "Name": "Excalibur",
+      "Energy": 100,
+      "Image": "ExcaliburNewLook.png"
+    },
+    "Titania": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "D"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "The Silver Grove",
+      "Armor": 65,
+      "Name": "Titania",
+      "Energy": 100,
+      "Image": "TitaniaNewLook.png"
+    },
+    "Mesa": {
+      "Sprint": 1.1,
+      "Conclave": true,
+      "Shield": 75,
+      "Sex": "Female",
+      "Polarities": [
+        "Bar",
+        "Bar"
+      ],
+      "AuraPolarity": "V",
+      "Health": 125,
+      "Introduced": "15.5",
+      "Armor": 65,
+      "Name": "Mesa",
+      "Energy": 100,
+      "Image": "MesaLarge.png"
+    },
+    "Nidus": {
+      "Sprint": 1,
+      "Conclave": true,
+      "ArmorRank30": 450,
+      "Sex": "Male",
+      "Polarities": [
+        "V",
+        "D"
+      ],
+      "Shield": 0,
+      "AuraPolarity": "V",
+      "Health": 150,
+      "Introduced": "19.5",
+      "Armor": 300,
+      "Name": "Nidus",
+      "Energy": 100,
+      "Image": "NidusNewLook.png"
+    },
+    "Zephyr Prime": {
+      "Sprint": 1.2,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Female",
+      "Name": "Zephyr Prime",
+      "Polarities": [
+        "V",
+        "V",
+        "D",
+        "Bar"
+      ],
+      "AuraPolarity": "D",
+      "Health": 150,
+      "Introduced": "22.16.4",
+      "Mastery": 6,
+      "Image": "ZephyrPrimeIcon.png",
+      "Energy": 150,
+      "Armor": 75
+    },
+    "Mag Prime": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Female",
+      "Polarities": [
+        "Bar",
+        "Bar",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "10",
+      "Armor": 65,
+      "Name": "Mag Prime",
+      "Energy": 175,
+      "Image": "MagPrimeNewLook.png"
+    },
+    "Rhino": {
+      "Sprint": 0.95,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "D"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "Vanilla",
+      "Armor": 190,
+      "Name": "Rhino",
+      "Energy": 100,
+      "Image": "RhinoNewLook.png"
+    },
+    "Zephyr": {
+      "Sprint": 1.15,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "Bar"
+      ],
+      "AuraPolarity": "D",
+      "Health": 150,
+      "Introduced": "12",
+      "Armor": 15,
+      "Name": "Zephyr",
+      "Energy": 100,
+      "Image": "ZephyrNewLook.png"
+    },
+    "Equinox": {
+      "Sprint": 1.15,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "17",
+      "Armor": 100,
+      "Polarities": [
+        "D",
+        "V"
+      ],
+      "Energy": 150,
+      "Name": "Equinox"
+    },
+    "Volt Prime": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "16.1",
+      "Armor": 100,
+      "Name": "Volt Prime",
+      "Energy": 200,
+      "Image": "VoltPrimeLarge.png"
+    },
+    "Volt": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "Vanilla",
+      "Armor": 15,
+      "Name": "Volt",
+      "Energy": 100,
+      "Image": "VoltNewLook.png"
+    },
+    "Vauban Prime": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "V",
+        "D"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "18.12",
+      "Armor": 100,
+      "Name": "Vauban Prime",
+      "Energy": 150,
+      "Image": "VaubanPrimeNewLook.png"
+    },
+    "Frost": {
+      "Sprint": 0.95,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "D"
+      ],
+      "AuraPolarity": "D",
+      "Health": 100,
+      "Introduced": "6",
+      "Armor": 300,
+      "Name": "Frost",
+      "Energy": 100,
+      "Image": "FrostNewLook.png"
+    },
+    "Vauban": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 75,
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "V"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "7.11",
+      "Armor": 50,
+      "Name": "Vauban",
+      "Energy": 150,
+      "Image": "VaubanNewLook.png"
+    },
+    "Trinity": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Polarities": [
+        "D",
+        "D"
+      ],
+      "AuraPolarity": "D",
+      "Health": 100,
+      "Introduced": "Vanilla",
+      "Armor": 15,
+      "Name": "Trinity",
+      "Energy": 150,
+      "Image": "TrinityNewLook.png"
+    },
+    "Valkyr": {
+      "Sprint": 1.1,
+      "Conclave": true,
+      "Shield": 50,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "11",
+      "Armor": 600,
+      "Name": "Valkyr",
+      "Energy": 100,
+      "Image": "ValkyrNewLook.png"
+    },
+    "Trinity Prime": {
+      "Sprint": 1.1,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Female",
+      "Polarities": [
+        "D",
+        "D",
+        "V",
+        "Bar"
+      ],
+      "AuraPolarity": "D",
+      "Health": 100,
+      "Introduced": "17.6",
+      "Armor": 15,
+      "Name": "Trinity Prime",
+      "Energy": 150,
+      "Image": "TrinityPrimeMain.png"
+    },
+    "Saryn Prime": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Polarities": [
+        "Bar",
+        "D",
+        "V"
+      ],
+      "AuraPolarity": "D",
+      "Health": 125,
+      "Introduced": "18.4.12",
+      "Armor": 225,
+      "Name": "Saryn Prime",
+      "Energy": 200,
+      "Image": "SarynPrimeLarge.png"
+    },
+    "Nova": {
+      "Sprint": 1.2,
+      "Conclave": true,
+      "Shield": 75,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "9",
+      "Armor": 65,
+      "Name": "Nova",
+      "Energy": 150,
+      "Image": "NovaNewLook.png"
+    },
+    "Harrow": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "Bar"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "21",
+      "Armor": 150,
+      "Name": "Harrow",
+      "Energy": 100,
+      "Image": "Harrow.png"
+    },
+    "Oberon": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Male",
+      "Polarities": [
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 125,
+      "Introduced": "11.5",
+      "Armor": 150,
+      "Name": "Oberon",
+      "Energy": 150,
+      "Image": "OberonNewLook.png"
+    },
+    "Mirage Prime": {
+      "Sprint": 1.2,
+      "Shield": 110,
+      "Sex": "Female",
+      "Name": "Mirage Prime",
+      "Polarities": [
+        "D",
+        "D",
+        "Bar",
+        "V"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 80,
+      "Introduced": "22.7",
+      "Armor": 150,
+      "Mastery": 8,
+      "Energy": 150,
+      "Image": "MiragePrime.png"
+    },
+    "Banshee": {
+      "Sprint": 1.1,
+      "SystemCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Control Module",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Morphics",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Salvage",
+            "Count": 500
+          },
+          {
+            "Type": "Resource",
+            "Name": "Plastids",
+            "Count": 400
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "ChassisCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Morphics",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Ferrite",
+            "Count": 900
+          },
+          {
+            "Type": "Resource",
+            "Name": "Rubedo",
+            "Count": 50
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "Conclave": true,
+      "Shield": 100,
+      "NeuroCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Circuits",
+            "Count": 150
+          },
+          {
+            "Type": "Resource",
+            "Name": "Neural Sensors",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Polymer Bundle",
+            "Count": 200
+          },
+          {
+            "Type": "Resource",
+            "Name": "Salvage",
+            "Count": 500
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "Image": "BansheeNewLook.png",
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "7",
+      "Armor": 15,
+      "Name": "Banshee",
+      "Energy": 150,
+      "MainCost": {
+        "MarketCost": 225,
+        "Time": 72,
+        "Parts": [
+          {
+            "Type": "Item",
+            "Name": "Neuroptics",
+            "Count": 1
+          },
+          {
+            "Type": "Item",
+            "Name": "Chassis",
+            "Count": 1
+          },
+          {
+            "Type": "Item",
+            "Name": "Systems",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Orokin Cell",
+            "Count": 1
+          }
+        ],
+        "Rush": 50,
+        "Credits": 25000
+      }
+    },
+    "Frost Prime": {
+      "Sprint": 0.95,
+      "Conclave": true,
+      "Shield": 175,
+      "Sex": "Male",
+      "Polarities": [
+        "Bar",
+        "D",
+        "D"
+      ],
+      "AuraPolarity": "D",
+      "Health": 100,
+      "Introduced": "7.10",
+      "Armor": 300,
+      "Name": "Frost Prime",
+      "Energy": 100,
+      "Image": "FrostPrimeNewLook.png"
+    },
+    "Nova Prime": {
+      "Sprint": 1.2,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "15.7",
+      "Armor": 65,
+      "Name": "Nova Prime",
+      "Energy": 175,
+      "Image": "NovaPrimeNewLook.png"
+    },
+    "Nyx Prime": {
+      "Sprint": 1.125,
+      "Conclave": true,
+      "Shield": 125,
+      "Sex": "Female",
+      "Polarities": [
+        "V",
+        "Bar",
+        "D"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "14.8",
+      "Armor": 50,
+      "Name": "Nyx Prime",
+      "Energy": 150,
+      "Image": "NyxPrimeNewLook.png"
+    },
+    "Octavia": {
+      "Sprint": 1.05,
+      "Conclave": true,
+      "Shield": 75,
+      "Sex": "Female",
+      "Polarities": [
+        "Bar",
+        "Bar"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 100,
+      "Introduced": "20",
+      "Armor": 125,
+      "Name": "Octavia",
+      "Energy": 150,
+      "Image": "Octavia.png"
+    },
+    "Nezha": {
+      "Sprint": 1.15,
+      "Conclave": true,
+      "Shield": 75,
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "V"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 75,
+      "Introduced": "18.1",
+      "Armor": 175,
+      "Name": "Nezha",
+      "Energy": 150,
+      "Image": "NezhaNewLook.png"
+    },
+    "Nekros Prime": {
+      "Sprint": 1.1,
+      "Conclave": true,
+      "Shield": 150,
+      "Sex": "Male",
+      "Polarities": [
+        "V",
+        "D",
+        "Bar"
+      ],
+      "AuraPolarity": "None",
+      "Health": 100,
+      "Introduced": "The Silver Grove 3",
+      "Armor": 65,
+      "Name": "Nekros Prime",
+      "Energy": 125,
+      "Image": "NekrosPrimeNewLook.png"
+    },
+    "Ash": {
+      "Sprint": 1.15,
+      "SystemCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Control Module",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Morphics",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Salvage",
+            "Count": 500
+          },
+          {
+            "Type": "Resource",
+            "Name": "Plastids",
+            "Count": 500
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "ChassisCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Morphics",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Ferrite",
+            "Count": 1000
+          },
+          {
+            "Type": "Resource",
+            "Name": "Rubedo",
+            "Count": 300
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "Conclave": true,
+      "Shield": 100,
+      "NeuroCost": {
+        "Parts": [
+          {
+            "Type": "Resource",
+            "Name": "Alloy Plate",
+            "Count": 150
+          },
+          {
+            "Type": "Resource",
+            "Name": "Neural Sensors",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Polymer Bundle",
+            "Count": 150
+          },
+          {
+            "Type": "Resource",
+            "Name": "Rubedo",
+            "Count": 500
+          }
+        ],
+        "Rush": 25,
+        "Time": 12,
+        "Credits": 15000
+      },
+      "Image": "AshNewLook.png",
+      "Sex": "Male",
+      "Polarities": [
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 150,
+      "Introduced": "Vanilla",
+      "Armor": 65,
+      "Name": "Ash",
+      "Energy": 100,
+      "MainCost": {
+        "MarketCost": 375,
+        "Time": 72,
+        "BPCost": 35000,
+        "Parts": [
+          {
+            "Type": "Item",
+            "Name": "Neuroptics",
+            "Count": 1
+          },
+          {
+            "Type": "Item",
+            "Name": "Chassis",
+            "Count": 1
+          },
+          {
+            "Type": "Item",
+            "Name": "Systems",
+            "Count": 1
+          },
+          {
+            "Type": "Resource",
+            "Name": "Orokin Cell",
+            "Count": 1
+          }
+        ],
+        "Rush": 50,
+        "Credits": 25000
+      }
+    },
+    "Oberon Prime": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Male",
+      "Name": "Oberon Prime",
+      "Polarities": [
+        "Bar",
+        "Bar",
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 125,
+      "Introduced": "20.6.2",
+      "Armor": 225,
+      "Mastery": 8,
+      "Energy": 175,
+      "Image": "OberonPrimeBust.png"
+    },
+    "Ember": {
+      "Sprint": 1.1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Polarities": [
+        "Bar",
+        "Bar"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "Vanilla",
+      "Armor": 100,
+      "Name": "Ember",
+      "Energy": 150,
+      "Image": "EmberNewLook.png"
+    },
+    "Excalibur Prime": {
+      "Sprint": 1,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "V",
+        "V"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "5",
+      "Armor": 250,
+      "Name": "Excalibur Prime",
+      "Energy": 100,
+      "Image": "ExcaliburPrimeNewLook.png"
+    },
+    "Loki Prime": {
+      "Sprint": 1.25,
+      "Conclave": true,
+      "Shield": 75,
+      "Sex": "Male",
+      "Polarities": [
+        "D",
+        "D",
+        "V",
+        "Bar"
+      ],
+      "AuraPolarity": "Bar",
+      "Health": 75,
+      "Introduced": "13.7",
+      "Armor": 65,
+      "Name": "Loki Prime",
+      "Energy": 175,
+      "Image": "LokiPrimeNewLook.png"
+    },
+    "Banshee Prime": {
+      "Sprint": 1.15,
+      "Conclave": true,
+      "Shield": 100,
+      "Sex": "Female",
+      "Name": "Banshee Prime",
+      "Polarities": [
+        "V",
+        "V",
+        "Bar"
+      ],
+      "AuraPolarity": "V",
+      "Health": 100,
+      "Introduced": "19.11.5",
+      "Armor": 65,
+      "Mastery": 8,
+      "Energy": 175,
+      "Image": "BansheePrimeIcon.png"
+    }
+  }
+}
