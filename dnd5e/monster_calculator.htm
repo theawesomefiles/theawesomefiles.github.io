@@ -13,6 +13,92 @@ var json_obj;
 
 function load() {
 	json_obj = JSON.parse(Get("data.json"));
+	json_obj = json_obj.reduce(function(map, obj) {
+			map[obj.cr] = obj;
+			return map;
+	}, {});
+	process();
+}
+
+function calc(currentStat, avgCurrent, avgDesired) {
+	var result = Math.round((currentStat / avgCurrent) * avgDesired);
+	if (isNaN(result)) {
+		return avgDesired;
+	}
+	return result;
+}
+
+function process() {
+	var input_cr_element = document.getElementById('monster_cr');
+	var input_cr = input_cr_element.options[input_cr_element.selectedIndex].value;
+	var input_entry = json_obj[input_cr];
+	
+	var desired_cr_element = document.getElementById('desired_cr');
+	var desired_cr = desired_cr_element.options[desired_cr_element.selectedIndex].value;
+	var desired_entry = json_obj[desired_cr];
+
+	var input_prof = document.getElementById('monster_prof').value;
+	var input_ac = document.getElementById('monster_ac').value;
+	var input_hp = document.getElementById('monster_hp').value;
+	var input_attack_bonus = document.getElementById('monster_attack_bonus').value;
+	var input_damage_per_round = document.getElementById('monster_damage_per_round').value;
+	var input_save_dc = document.getElementById('monster_save_dc').value;
+
+	var calc_prof;
+	var calc_ac;
+	var calc_hp;
+	var calc_attack_bonus;
+	var calc_damage_per_round;
+	var calc_save_dc;
+
+	if(input_prof == "") {
+		calc_prof = desired_entry.proficiency;
+	}
+	else {
+		calc_prof = calc(input_prof, input_entry.proficiency, desired_entry.proficiency);
+	}
+
+	if(input_ac == "") {
+		calc_ac = desired_entry.ac;
+	}
+	else {
+		calc_ac = calc(input_ac, input_entry.ac, desired_entry.ac);
+	}
+
+	if(input_hp == "") {
+		calc_hp = desired_entry.hp;
+	}
+	else {
+		calc_hp = calc(input_hp, input_entry.hp, desired_entry.hp);
+	}
+
+	if(input_attack_bonus == "") {
+		calc_attack_bonus = desired_entry.attack_bonus;
+	}
+	else {
+		calc_attack_bonus = calc(input_attack_bonus, input_entry.attack_bonus, desired_entry.attack_bonus);
+	}
+
+	if(input_damage_per_round == "") {
+		calc_damage_per_round = desired_entry.damage_per_round;
+	}
+	else {
+		calc_damage_per_round = calc(input_damage_per_round, input_entry.damage_per_round, desired_entry.damage_per_round);
+	}
+
+	if(input_save_dc == "") {
+		calc_save_dc = desired_entry.save_dc;
+	}
+	else {
+		calc_save_dc = calc(input_save_dc, input_entry.save_dc, desired_entry.save_dc);
+	}
+
+	document.getElementById('calc_prof').innerHTML = calc_prof;
+	document.getElementById('calc_ac').innerHTML = calc_ac;
+	document.getElementById('calc_hp').innerHTML = calc_hp;
+	document.getElementById('calc_attack_bonus').innerHTML = calc_attack_bonus;
+	document.getElementById('calc_damage_per_round').innerHTML = calc_damage_per_round;
+	document.getElementById('calc_save_dc').innerHTML = calc_save_dc;
 }
 </script>
 </head>
@@ -20,13 +106,13 @@ function load() {
 <div id="options"></div>
 <div id="results"></div>
 <table><tbody>
-				<tr><td>Monster CR:</td><td><select name='monster_cr'><option value='0' selected>0</option><option value='1/8'>1/8</option><option value='1/4'>1/4</option><option value='1/2'>1/2</option><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option></select></td><td>Desired CR:</td><td><select name='desired_cr'><option value='0' selected>0</option><option value='1/8'>1/8</option><option value='1/4'>1/4</option><option value='1/2'>1/2</option><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option></select></td></tr>
-				<tr><td>Monster Proficiency Bonus:</td><td><input type='text' id='monster_prof' /></td><td>Calculated Proficiency Bonus:</td><td><label id='calc_prof' /></td></tr>
-				<tr><td>Monster AC:</td><td><input type='text' id='monster_ac' /></td><td>Calculated AC:</td><td label id='calc_ac' /></td></tr>
-				<tr><td>Monster HP:</td><td><input type='text' id='monster_hp' /></td><td>Calculated HP:</td><td label id='calc_hp' /></td></tr>
-				<tr><td>Monster Attack Bonus:</td><td><input type='text' id='monster_attack_bonus' /></td><td>Calculated Attack Bonus:</td><td><label id='calc_attack_bonus' /></td></tr>
-				<tr><td>Monster Damage per Round:</td><td><input type='text' id='monster_damage_per_round' /></td><td>Calculated Damage per Round:</td><td><label id='calc_damage_per_round' /></td></tr>
-				<tr><td>Monster Save DC:</td><td><input type='text' id='monster_save_dc' /></td><td>Calculated Save DC:</td><td><label id='calc_save_dc' /></td></tr>
+				<tr><td>Monster CR:</td><td><select id='monster_cr' onchange="process()"><option value='0' selected>0</option><option value='1/8'>1/8</option><option value='1/4'>1/4</option><option value='1/2'>1/2</option><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option></select></td><td>Desired CR:</td><td><select id='desired_cr' onchange="process()"><option value='0' selected>0</option><option value='1/8'>1/8</option><option value='1/4'>1/4</option><option value='1/2'>1/2</option><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option></select></td></tr>
+				<tr><td>Monster Proficiency Bonus:</td><td><input type='text' id='monster_prof' onfocusout="process()" /></td><td>Calculated Proficiency Bonus:</td><td><label id='calc_prof' /></td></tr>
+				<tr><td>Monster AC:</td><td><input type='text' id='monster_ac' onfocusout="process()" /></td><td>Calculated AC:</td><td label id='calc_ac' /></td></tr>
+				<tr><td>Monster HP:</td><td><input type='text' id='monster_hp' onfocusout="process()" /></td><td>Calculated HP:</td><td label id='calc_hp' /></td></tr>
+				<tr><td>Monster Attack Bonus:</td><td><input type='text' id='monster_attack_bonus' onfocusout="process()" /></td><td>Calculated Attack Bonus:</td><td><label id='calc_attack_bonus' /></td></tr>
+				<tr><td>Monster Damage per Round:</td><td><input type='text' id='monster_damage_per_round' onfocusout="process()" /></td><td>Calculated Damage per Round:</td><td><label id='calc_damage_per_round' /></td></tr>
+				<tr><td>Monster Save DC:</td><td><input type='text' id='monster_save_dc' onfocusout="process()" /></td><td>Calculated Save DC:</td><td><label id='calc_save_dc' /></td></tr>
 </tbody></table>
 </body>
 </html>
