@@ -90,6 +90,9 @@ function process() {
 		calc_save_dc = desired_entry.save_dc;
 	}
 	else {
+
+	document.getElementById('monster_prof').placeholder = input_entry.proficiency;
+
 		calc_save_dc = calc(input_save_dc, input_entry.save_dc, desired_entry.save_dc);
 	}
 
@@ -99,6 +102,15 @@ function process() {
 	document.getElementById('calc_attack_bonus').innerHTML = calc_attack_bonus;
 	document.getElementById('calc_damage_per_round').innerHTML = calc_damage_per_round;
 	document.getElementById('calc_save_dc').innerHTML = calc_save_dc;
+
+	document.getElementById('monster_prof').placeholder = input_entry.proficiency;
+	document.getElementById('monster_ac').placeholder = input_entry.ac;
+	document.getElementById('monster_hp').placeholder = input_entry.hp;
+	document.getElementById('monster_attack_bonus').placeholder = input_entry.attack_bonus;
+	document.getElementById('monster_damage_per_round').placeholder = input_entry.damage_per_round;
+	document.getElementById('monster_save_dc').placeholder = input_entry.save_dc;
+
+
 }
 </script>
 </head>
