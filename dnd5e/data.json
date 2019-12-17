@@ -1,0 +1,308 @@
+[
+  {
+    "cr": "0",
+    "proficiency": 2,
+    "ac": 13,
+    "hp": 6,
+    "attack_bonus": 3,
+    "damage_per_round": 1,
+    "save_dc": 13
+  },
+  {
+    "cr": "1/8",
+    "proficiency": 2,
+    "ac": 13,
+    "hp": 35,
+    "attack_bonus": 3,
+    "damage_per_round": 3,
+    "save_dc": 13
+  },
+  {
+    "cr": "1/4",
+    "proficiency": 2,
+    "ac": 13,
+    "hp": 49,
+    "attack_bonus": 3,
+    "damage_per_round": 5,
+    "save_dc": 13
+  },
+  {
+    "cr": "1/2",
+    "proficiency": 2,
+    "ac": 13,
+    "hp": 70,
+    "attack_bonus": 3,
+    "damage_per_round": 8,
+    "save_dc": 13
+  },
+  {
+    "cr": "1",
+    "proficiency": 2,
+    "ac": 13,
+    "hp": 85,
+    "attack_bonus": 3,
+    "damage_per_round": 14,
+    "save_dc": 13
+  },
+  {
+    "cr": "2",
+    "proficiency": 2,
+    "ac": 13,
+    "hp": 100,
+    "attack_bonus": 3,
+    "damage_per_round": 20,
+    "save_dc": 13
+  },
+  {
+    "cr": "3",
+    "proficiency": 2,
+    "ac": 13,
+    "hp": 115,
+    "attack_bonus": 4,
+    "damage_per_round": 26,
+    "save_dc": 13
+  },
+  {
+    "cr": "4",
+    "proficiency": 2,
+    "ac": 14,
+    "hp": 130,
+    "attack_bonus": 5,
+    "damage_per_round": 32,
+    "save_dc": 14
+  },
+  {
+    "cr": "5",
+    "proficiency": 3,
+    "ac": 15,
+    "hp": 145,
+    "attack_bonus": 6,
+    "damage_per_round": 28,
+    "save_dc": 15
+  },
+  {
+    "cr": "6",
+    "proficiency": 3,
+    "ac": 15,
+    "hp": 160,
+    "attack_bonus": 6,
+    "damage_per_round": 44,
+    "save_dc": 15
+  },
+  {
+    "cr": "7",
+    "proficiency": 3,
+    "ac": 15,
+    "hp": 175,
+    "attack_bonus": 6,
+    "damage_per_round": 50,
+    "save_dc": 15
+  },
+  {
+    "cr": "8",
+    "proficiency": 3,
+    "ac": 16,
+    "hp": 190,
+    "attack_bonus": 7,
+    "damage_per_round": 56,
+    "save_dc": 16
+  },
+  {
+    "cr": "9",
+    "proficiency": 4,
+    "ac": 16,
+    "hp": 205,
+    "attack_bonus": 7,
+    "damage_per_round": 62,
+    "save_dc": 16
+  },
+  {
+    "cr": "10",
+    "proficiency": 4,
+    "ac": 17,
+    "hp": 220,
+    "attack_bonus": 7,
+    "damage_per_round": 68,
+    "save_dc": 16
+  },
+  {
+    "cr": "11",
+    "proficiency": 4,
+    "ac": 17,
+    "hp": 235,
+    "attack_bonus": 8,
+    "damage_per_round": 74,
+    "save_dc": 17
+  },
+  {
+    "cr": "12",
+    "proficiency": 4,
+    "ac": 17,
+    "hp": 250,
+    "attack_bonus": 8,
+    "damage_per_round": 80,
+    "save_dc": 17
+  },
+  {
+    "cr": "13",
+    "proficiency": 5,
+    "ac": 18,
+    "hp": 265,
+    "attack_bonus": 8,
+    "damage_per_round": 86,
+    "save_dc": 18
+  },
+  {
+    "cr": "14",
+    "proficiency": 5,
+    "ac": 18,
+    "hp": 280,
+    "attack_bonus": 8,
+    "damage_per_round": 92,
+    "save_dc": 18
+  },
+  {
+    "cr": "15",
+    "proficiency": 5,
+    "ac": 18,
+    "hp": 295,
+    "attack_bonus": 8,
+    "damage_per_round": 98,
+    "save_dc": 18
+  },
+  {
+    "cr": "16",
+    "proficiency": 5,
+    "ac": 18,
+    "hp": 310,
+    "attack_bonus": 9,
+    "damage_per_round": 104,
+    "save_dc": 18
+  },
+  {
+    "cr": "17",
+    "proficiency": 6,
+    "ac": 19,
+    "hp": 325,
+    "attack_bonus": 10,
+    "damage_per_round": 110,
+    "save_dc": 19
+  },
+  {
+    "cr": "18",
+    "proficiency": 6,
+    "ac": 19,
+    "hp": 340,
+    "attack_bonus": 10,
+    "damage_per_round": 116,
+    "save_dc": 19
+  },
+  {
+    "cr": "19",
+    "proficiency": 6,
+    "ac": 19,
+    "hp": 355,
+    "attack_bonus": 10,
+    "damage_per_round": 122,
+    "save_dc": 19
+  },
+  {
+    "cr": "20",
+    "proficiency": 6,
+    "ac": 19,
+    "hp": 400,
+    "attack_bonus": 10,
+    "damage_per_round": 140,
+    "save_dc": 19
+  },
+  {
+    "cr": "21",
+    "proficiency": 7,
+    "ac": 19,
+    "hp": 445,
+    "attack_bonus": 11,
+    "damage_per_round": 158,
+    "save_dc": 20
+  },
+  {
+    "cr": "22",
+    "proficiency": 7,
+    "ac": 19,
+    "hp": 490,
+    "attack_bonus": 11,
+    "damage_per_round": 176,
+    "save_dc": 20
+  },
+  {
+    "cr": "23",
+    "proficiency": 7,
+    "ac": 19,
+    "hp": 535,
+    "attack_bonus": 11,
+    "damage_per_round": 194,
+    "save_dc": 20
+  },
+  {
+    "cr": "24",
+    "proficiency": 7,
+    "ac": 19,
+    "hp": 580,
+    "attack_bonus": 12,
+    "damage_per_round": 212,
+    "save_dc": 21
+  },
+  {
+    "cr": "25",
+    "proficiency": 8,
+    "ac": 19,
+    "hp": 625,
+    "attack_bonus": 12,
+    "damage_per_round": 230,
+    "save_dc": 21
+  },
+  {
+    "cr": "26",
+    "proficiency": 8,
+    "ac": 19,
+    "hp": 670,
+    "attack_bonus": 12,
+    "damage_per_round": 248,
+    "save_dc": 21
+  },
+  {
+    "cr": "27",
+    "proficiency": 8,
+    "ac": 19,
+    "hp": 715,
+    "attack_bonus": 13,
+    "damage_per_round": 266,
+    "save_dc": 22
+  },
+  {
+    "cr": "28",
+    "proficiency": 8,
+    "ac": 19,
+    "hp": 760,
+    "attack_bonus": 13,
+    "damage_per_round": 284,
+    "save_dc": 22
+  },
+  {
+    "cr": "29",
+    "proficiency": 9,
+    "ac": 19,
+    "hp": 805,
+    "attack_bonus": 13,
+    "damage_per_round": 302,
+    "save_dc": 22
+  },
+  {
+    "cr": "30",
+    "proficiency": 9,
+    "ac": 19,
+    "hp": 850,
+    "attack_bonus": 14,
+    "damage_per_round": 320,
+    "save_dc": 23
+  }
+]
